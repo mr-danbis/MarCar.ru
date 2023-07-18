@@ -1,0 +1,229 @@
+@import "../colors/colors.scss";
+
+@font-face {
+    font-family: 'Inter';
+    src: local('Inter'), url(../../fonts/static/Inter-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter';
+    font-style: normal;
+}
+
+ul {
+    list-style: none;
+}
+
+button, input {
+    border: 0;
+}
+
+button, a {
+    cursor: pointer;
+}
+
+p {
+    margin: 0;
+}
+
+.logo {
+    width: 165px;
+    height: 34px;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+}
+
+.video-container {
+    width: 100%;
+    height: 100%;
+}
+
+.video {
+    width: 1100px;
+    height: auto;
+    border-radius: 4px;
+}
+
+.number-list {
+    gap: 18px;
+    display: flex;
+    padding-left: 20px;
+    flex-direction: column;
+    &__item {
+        color: $black;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22px;
+        padding-left: 8px;
+        &::marker {
+            color: $blue;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 22px;
+        }
+    }
+}
+
+.list-company {
+    margin: 10px 0 30px;
+    gap: 33px;
+    display: flex;
+    flex-wrap: wrap;
+    &__item {
+        gap: 15px;
+        width: 300px;
+        display: flex;
+        padding: 20px;
+        align-items: center;
+        border-radius: 2px;
+        background: #FBFBFB;
+        &-img {
+            width: 60px;
+            height: 50px;
+        }
+        &-info {
+            gap: 5px;
+            display: flex;
+            flex-direction: column;
+            &__title {
+                color: $black;
+                font-size: 15px;
+                font-weight: 700;
+                line-height: 20px;
+            }
+            &__subtitle {
+                color: $blue;
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 12px;
+            }
+        }
+    }
+}
+
+.title {
+    &__little {
+        
+    }
+    &__middle {
+        font-size: 35px;
+        font-weight: 700;
+        line-height: 45px;
+        color: var(--black, #232323);
+        span {
+            color: #248FEC;
+        }
+    }
+    &__big {
+        width: 785px;
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 60px;
+        color: var(--black, #232323);
+        span {
+            color: #248FEC;
+        }
+    }
+}
+
+.list-social {
+    gap: 5px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    &__item {
+        width: 30px;
+        height: 30px;
+        &-img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+.btn-collapse, .btn-read-more {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    background: transparent;
+    span {
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 11px;
+        margin-right: 5px;
+        color: var(--deep-blue, #1E4D79);
+    }
+}
+
+.btn-collapse {
+    display: none;
+    &__img {
+        transform: rotate(180deg);
+    }
+}
+
+.block-contact {
+    gap: 8px;
+    color: $white;
+    display: flex;
+    align-items: center;
+    transition: color 0.5s ease;
+    &:hover {
+        color: $blue;
+    }
+    &__icon {
+        width: 18px;
+        height: 18px;
+    }
+    &__icon-big {
+        width: 20px;
+        height: 20px;
+    }
+    &__text-default {
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 18px;
+        color: $sub-black;
+    }
+    &__text-dark, &__text-light {
+        font-size: 15px;
+        font-weight: 600;
+        color: $black;
+    }
+    &__text-light {
+        color: $white;
+    }
+}
+
+.btn {
+    width: 100%;
+    &-blue {
+        width: 100%;
+        padding: 18px;
+        color: $white;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 24px;
+        border-radius: 8px;
+        background-color: $blue;
+        box-shadow: 0px 14px 24px 0px rgba(36, 143, 236, 0.18);
+        transition: color 0.5s ease, background-color 0.5s ease;
+        &:hover {
+            color: $black;
+            background-color: $yellow;
+        }
+    }
+}

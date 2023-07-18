@@ -1,0 +1,310 @@
+<header class="header">
+    <div class="header__top">
+        <div class="header__wrapper wrapper">
+            <div class="header__top-left-block">
+                <div class="header__top-left-block-city" onclick="toggleDropdown(1)">
+                    <p class="header__top-left-block-city__text">Укажите Ваш город</p>
+                    <p class="header__top-left-block-city__select">Санкт-Петербург</p>
+                </div>
+                <div class="header__top-left-block-contact">
+                    <div class="block-contact">
+                        <img src="/images/location.svg" alt="" class="block-contact__icon">
+                        <p class="block-contact__text-default">Ленинградская ул., с24Г, Химки</p>
+                    </div>
+                    <div class="block-contact">
+                        <img src="/images/timer.svg" alt="" class="block-contact__icon">
+                        <p class="block-contact__text-default">09:00-21:00</p>
+                    </div>
+                </div>
+                <button class="header__top-left-block-btn-search" onclick="toggleDropdown(2)">
+                    <img src="/images/search.svg" alt="" class="header__top-left-block-btn-search__icon">
+                    <p class="header__top-left-block-btn-search__text">Найти товар или услугу</p>
+                </button>
+                <div id="dropdown-1" class="dropdown-content">
+                    <h3>Контент 1</h3>
+                    <p>Содержимое для ссылки 1...</p>
+                </div>
+            
+                <div id="dropdown-2" class="dropdown-content">
+                    <div class="dropdown-content__header">
+                        <div class="dropdown-content__header_title">Поиск на сайте</div>
+                        <button class="dropdown-content__close-btn" onclick="closeDropdown(2)">
+                            <img src="/images/btnclose.svg" alt="" class="dropdown-content__close-btn_icon">
+                        </button>
+                    </div>
+                    <div class="dropdown-content__main">
+                        <input type="text" class="dropdown-content__input" placeholder="Найти товар или услугу">
+                        <div class="dropdown-content__main__container_header">
+                            <p class="dropdown-content__main__container_header__text">Каталог авто</p>
+                            <p class="dropdown-content__main__container_header__text">Услуги</p>
+                            <p class="dropdown-content__main__container_header__text">Новости</p>
+                        </div>
+                        <p class="dropdown-content__main__container_count">
+                            Найдено: <span>12884920</span> результатов
+                        </p>
+                        <ul class="dropdown-content__list-auto">
+                            <li class="dropdown-content__list-auto__item">
+                                <div class="dropdown-content__list-auto__item_left-block">
+                                    <img src="../images/imgDropdown.png" alt="" class="dropdown-content__list-auto__item_img">
+                                    <div class="dropdown-content__list-auto__item_left-block__info">
+                                        <div class="dropdown-content__list-auto__item_left-block__info__container">
+                                            <div class="dropdown-content__list-auto__item_new">Новинка</div>
+                                            <div class="dropdown-content__list-auto__item_discount">Скидка</div>
+                                        </div>
+                                        <p class="dropdown-content__list-auto__item_title">Zotye T600</p>
+                                        <p class="dropdown-content__list-auto__item_subtitle">Внедорожник, 2019, 1.5 л, бензин</p>
+                                    </div>
+                                </div>
+                                <div class="dropdown-content__list-auto__item_right-block">
+                                    <div class="dropdown-content__list-auto__item_price-info">
+                                        <p class="dropdown-content__list-auto__item_price-info_old">
+                                            <span>971 600</span> ₽
+                                        </p>
+                                        <p class="dropdown-content__list-auto__item_price-info_new">
+                                            <span>706 700</span> ₽
+                                        </p>
+                                    </div>
+                                    <a href="#" class="dropdown-content__list-auto__item_more">Подробнее</a>
+                                </div>
+                            </li>
+                            <li class="dropdown-content__list-auto__item">
+                                <div class="dropdown-content__list-auto__item_left-block">
+                                    <img src="/images/imgDropdown.png" alt="" class="dropdown-content__list-auto__item_img">
+                                    <div class="dropdown-content__list-auto__item_left-block__info">
+                                        <div class="dropdown-content__list-auto__item_left-block__info__container">
+                                            <div class="dropdown-content__list-auto__item_new">Новинка</div>
+                                            <div class="dropdown-content__list-auto__item_discount">Скидка</div>
+                                        </div>
+                                        <p class="dropdown-content__list-auto__item_title">Zotye T600</p>
+                                        <p class="dropdown-content__list-auto__item_subtitle">Внедорожник, 2019, 1.5 л, бензин</p>
+                                    </div>
+                                </div>
+                                <div class="dropdown-content__list-auto__item_right-block">
+                                    <div class="dropdown-content__list-auto__item_price-info">
+                                        <p class="dropdown-content__list-auto__item_price-info_old">
+                                            <span>971 600</span> ₽
+                                        </p>
+                                        <p class="dropdown-content__list-auto__item_price-info_new">
+                                            <span>706 700</span> ₽
+                                        </p>
+                                    </div>
+                                    <a href="#" class="dropdown-content__list-auto__item_more">Подробнее</a>
+                                </div>
+                            </li>
+                            <li class="dropdown-content__list-auto__item">
+                                <div class="dropdown-content__list-auto__item_left-block">
+                                    <img src="/images/imgDropdown.png" alt="" class="dropdown-content__list-auto__item_img">
+                                    <div class="dropdown-content__list-auto__item_left-block__info">
+                                        <div class="dropdown-content__list-auto__item_left-block__info__container">
+                                            <div class="dropdown-content__list-auto__item_new">Новинка</div>
+                                            <div class="dropdown-content__list-auto__item_discount">Скидка</div>
+                                        </div>
+                                        <p class="dropdown-content__list-auto__item_title">Zotye T600</p>
+                                        <p class="dropdown-content__list-auto__item_subtitle">Внедорожник, 2019, 1.5 л, бензин</p>
+                                    </div>
+                                </div>
+                                <div class="dropdown-content__list-auto__item_right-block">
+                                    <div class="dropdown-content__list-auto__item_price-info">
+                                        <p class="dropdown-content__list-auto__item_price-info_old">
+                                            <span>971 600</span> ₽
+                                        </p>
+                                        <p class="dropdown-content__list-auto__item_price-info_new">
+                                            <span>706 700</span> ₽
+                                        </p>
+                                    </div>
+                                    <a href="#" class="dropdown-content__list-auto__item_more">Подробнее</a>
+                                </div>
+                            </li>
+                            <li class="dropdown-content__list-auto__item">
+                                <div class="dropdown-content__list-auto__item_left-block">
+                                    <img src="/images/imgDropdown.png" alt="" class="dropdown-content__list-auto__item_img">
+                                    <div class="dropdown-content__list-auto__item_left-block__info">
+                                        <div class="dropdown-content__list-auto__item_left-block__info__container">
+                                            <div class="dropdown-content__list-auto__item_new">Новинка</div>
+                                            <div class="dropdown-content__list-auto__item_discount">Скидка</div>
+                                        </div>
+                                        <p class="dropdown-content__list-auto__item_title">Zotye T600</p>
+                                        <p class="dropdown-content__list-auto__item_subtitle">Внедорожник, 2019, 1.5 л, бензин</p>
+                                    </div>
+                                </div>
+                                <div class="dropdown-content__list-auto__item_right-block">
+                                    <div class="dropdown-content__list-auto__item_price-info">
+                                        <p class="dropdown-content__list-auto__item_price-info_old">
+                                            <span>971 600</span> ₽
+                                        </p>
+                                        <p class="dropdown-content__list-auto__item_price-info_new">
+                                            <span>706 700</span> ₽
+                                        </p>
+                                    </div>
+                                    <a href="#" class="dropdown-content__list-auto__item_more">Подробнее</a>
+                                </div>
+                            </li>
+                            <li class="dropdown-content__list-auto__item">
+                                <div class="dropdown-content__list-auto__item_left-block">
+                                    <img src="/images/imgDropdown.png" alt="" class="dropdown-content__list-auto__item_img">
+                                    <div class="dropdown-content__list-auto__item_left-block__info">
+                                        <div class="dropdown-content__list-auto__item_left-block__info__container">
+                                            <div class="dropdown-content__list-auto__item_new">Новинка</div>
+                                            <div class="dropdown-content__list-auto__item_discount">Скидка</div>
+                                        </div>
+                                        <p class="dropdown-content__list-auto__item_title">Zotye T600</p>
+                                        <p class="dropdown-content__list-auto__item_subtitle">Внедорожник, 2019, 1.5 л, бензин</p>
+                                    </div>
+                                </div>
+                                <div class="dropdown-content__list-auto__item_right-block">
+                                    <div class="dropdown-content__list-auto__item_price-info">
+                                        <p class="dropdown-content__list-auto__item_price-info_old">
+                                            <span>971 600</span> ₽
+                                        </p>
+                                        <p class="dropdown-content__list-auto__item_price-info_new">
+                                            <span>706 700</span> ₽
+                                        </p>
+                                    </div>
+                                    <a href="#" class="dropdown-content__list-auto__item_more">Подробнее</a>
+                                </div>
+                            </li>
+                            <li class="dropdown-content__list-auto__item">
+                                <div class="dropdown-content__list-auto__item_left-block">
+                                    <img src="/images/imgDropdown.png" alt="" class="dropdown-content__list-auto__item_img">
+                                    <div class="dropdown-content__list-auto__item_left-block__info">
+                                        <div class="dropdown-content__list-auto__item_left-block__info__container">
+                                            <div class="dropdown-content__list-auto__item_new">Новинка</div>
+                                            <div class="dropdown-content__list-auto__item_discount">Скидка</div>
+                                        </div>
+                                        <p class="dropdown-content__list-auto__item_title">Zotye T600</p>
+                                        <p class="dropdown-content__list-auto__item_subtitle">Внедорожник, 2019, 1.5 л, бензин</p>
+                                    </div>
+                                </div>
+                                <div class="dropdown-content__list-auto__item_right-block">
+                                    <div class="dropdown-content__list-auto__item_price-info">
+                                        <p class="dropdown-content__list-auto__item_price-info_old">
+                                            <span>971 600</span> ₽
+                                        </p>
+                                        <p class="dropdown-content__list-auto__item_price-info_new">
+                                            <span>706 700</span> ₽
+                                        </p>
+                                    </div>
+                                    <a href="#" class="dropdown-content__list-auto__item_more">Подробнее</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="header__top-right-block">
+                <div class="block-contact">
+                    <img src="/images/phoneBlue.svg" alt="phone" class="block-contact__icon-big">
+                    <a href="tel:+8 495 248-14-80" class="block-contact__text-dark">8 (495) 248-14-80</a>
+                </div>
+                <div class="block-contact">
+                    <img src="/images/phoneBlue.svg" alt="phone" class="block-contact__icon-big">
+                    <a href="tel:+8 800 444-19-43" class="block-contact__text-dark">8 (800) 444-19-43</a>
+                </div>
+                <ul class="list-social">
+                    <li class="list-social__item">
+                        <a href="#" target="_blank" rel="noopener noreferrer">
+                            <img class="list-social__item-img" src="/images/vkBlue.svg" alt="Вконтакте"/>
+                        </a>
+                    </li>
+                    <li class="list-social__item">
+                        <a href="#" target="_blank" rel="noopener noreferrer">
+                            <img class="list-social__item-img" src="/images/odnoklasnikiBlue.svg" alt="Одноклассники"/>
+                        </a>
+                    </li>
+                    <li class="list-social__item">
+                        <a href="#" target="_blank" rel="noopener noreferrer">
+                            <img class="list-social__item-img" src="/images/youtubeBlue.svg" alt="Ютуб"/>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="header__bottom header__wrapper wrapper">
+        <div class="header__bottom-left-block">
+            <a href="/index.html" class="">
+                <img src="/images/logoBlue.svg" alt="" class="logo">
+            </a>
+            <nav>
+                <ul class="navigation-list">
+                    <li class="navigation-list__item">
+                        <a href="#" class="header__bottom__link-dropdown">
+                            Каталог авто
+                        </a>
+                        <img src="/images/arrow1.svg" alt="" class="navigation-list__item__icon">
+                    </li>
+                    <li class="navigation-list__item">
+                        <a href="/pages/servicesPages/servicePage.html" class="header__bottom__link-dropdown">
+                            Услуги
+                        </a>
+                        <img src="/images/arrow1.svg" alt="" class="navigation-list__item__icon">
+                    </li>
+                    <li class="navigation-list__item">
+                        <a href="#" class="header__bottom__link">
+                            Трейд-ин
+                        </a>
+                    </li>
+                    <li class="navigation-list__item">
+                        <a href="#" class="header__bottom__link">
+                            Выкуп авто
+                        </a>
+                    </li>
+                    <li class="navigation-list__item">
+                        <a href="#" class="header__bottom__link">
+                            Такси
+                        </a>
+                    </li>
+                    <li class="navigation-list__item">
+                        <a href="#" class="header__bottom__link">
+                            Спецпрдложения
+                        </a>
+                    </li>
+                    <li class="navigation-list__item">
+                        <a href="/pages/aboutPage.html" class="header__bottom__link-dropdown">
+                            О компании
+                        </a>
+                    </li>
+                    <li class="navigation-list__item">
+                        <a href="#" class="header__bottom__link">
+                            Контакты
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header__bottom-right-block">
+            <button class="header__bottom-right-block__btn">
+                <img src="/images/star.svg" alt="" class="header__bottom-right-block__btn__img">
+            </button>
+            <button class="header__bottom-right-block__btn">
+                <img src="/images/ranking.svg" alt="" class="header__bottom-right-block__btn__img">
+            </button>
+            <button class="header__bottom-right-block__btn-login">
+                <img src="/images/loginWhite.svg" alt="Личный кабинет" class="header__bottom-right-block__btn-login__img">
+                <p class="header__bottom-right-block__btn-login__text">Войти</p>
+            </button>
+        </div>
+    </div>
+    <div class="header__mobile wrapper">
+        <img src="/images/logoBlue.svg" alt="" class="header__mobile-logo">
+        <div class="header__mobile-container">
+            <ul class="header__mobile-list">
+                <li class="header__mobile-list__item">
+                    <button class="header__mobile-list__item-btn">
+                        <img src="/images/search.svg" alt="">
+                    </button>
+                    <button class="header__mobile-list__item-btn">
+                        <img src="/images/star.svg" alt="">
+                    </button>
+                    <button class="header__mobile-list__item-btn">
+                        <img src="/images/ranking.svg" alt="">
+                    </button>
+                </li>
+            </ul>
+            <button class="header__mobile-burger-menu">
+                <img src="/images/burgerIcon.svg" alt="">
+            </button>
+        </div>
+    </div>
+</header>
