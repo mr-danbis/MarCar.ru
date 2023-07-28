@@ -116,6 +116,3 @@ document.addEventListener('DOMContentLoaded', () => {
 document.addEventListener('DOMContentLoaded', () => {
   handleToggleText('.service-car-rental__first-block__container', '.service-car-rental__first-block__content', '#btn-read-more-car-rental', '#btn-collapse-car-rental', '138px');
 });
-
-
-
