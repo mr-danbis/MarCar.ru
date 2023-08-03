@@ -82,11 +82,13 @@ ul {
     list-style: none;
 }
 
-button, input {
+button,
+input {
     border: 0;
 }
 
-button, a {
+button,
+a {
     cursor: pointer;
 }
 
@@ -120,12 +122,14 @@ p {
     display: flex;
     padding-left: 20px;
     flex-direction: column;
+
     &__item {
         color: $black;
         font-size: 16px;
         font-weight: 400;
         line-height: 22px;
         padding-left: 8px;
+
         &::marker {
             color: $blue;
             font-size: 18px;
@@ -140,6 +144,7 @@ p {
     gap: 33px;
     display: flex;
     flex-wrap: wrap;
+
     &__item {
         gap: 15px;
         width: 300px;
@@ -148,20 +153,24 @@ p {
         align-items: center;
         border-radius: 2px;
         background: #FBFBFB;
+
         &-img {
             width: 60px;
             height: 50px;
         }
+
         &-info {
             gap: 5px;
             display: flex;
             flex-direction: column;
+
             &__title {
                 color: $black;
                 font-size: 15px;
                 font-weight: 700;
                 line-height: 20px;
             }
+
             &__subtitle {
                 color: $blue;
                 font-size: 12px;
@@ -178,16 +187,19 @@ p {
         font-weight: 700;
         line-height: 45px;
         color: var(--black, #232323);
+
         span {
             color: #248FEC;
         }
     }
+
     &__big {
         width: 785px;
         font-size: 50px;
         font-weight: 700;
         line-height: 60px;
         color: var(--black, #232323);
+
         span {
             color: #248FEC;
         }
@@ -199,9 +211,11 @@ p {
     width: 100px;
     display: flex;
     align-items: center;
+
     &__item {
         width: 30px;
         height: 30px;
+
         &-img {
             width: 100%;
             height: auto;
@@ -209,11 +223,13 @@ p {
     }
 }
 
-.btn-collapse, .btn-read-more {
+.btn-collapse,
+.btn-read-more {
     display: flex;
     margin-top: 20px;
     align-items: center;
     background: transparent;
+
     span {
         font-size: 13px;
         font-weight: 400;
@@ -225,6 +241,7 @@ p {
 
 .btn-collapse {
     display: none;
+
     &__img {
         transform: rotate(180deg);
     }
@@ -236,28 +253,35 @@ p {
     display: flex;
     align-items: center;
     transition: color 0.5s ease;
+
     &:hover {
         color: $blue;
     }
+
     &__icon {
         width: 18px;
         height: 18px;
     }
+
     &__icon-big {
         width: 20px;
         height: 20px;
     }
+
     &__text-default {
         font-size: 12px;
         font-weight: 300;
         line-height: 18px;
         color: $sub-black;
     }
-    &__text-dark, &__text-light {
+
+    &__text-dark,
+    &__text-light {
         font-size: 15px;
         font-weight: 600;
         color: $black;
     }
+
     &__text-light {
         color: $white;
     }
@@ -265,6 +289,7 @@ p {
 
 .btn {
     width: 100%;
+
     &-blue {
         width: 100%;
         padding: 18px;
@@ -276,9 +301,30 @@ p {
         background-color: $blue;
         box-shadow: 0px 14px 24px 0px rgba(36, 143, 236, 0.18);
         transition: color 0.5s ease, background-color 0.5s ease;
+
         &:hover {
             color: $black;
             background-color: $yellow;
         }
+    }
+}
+
+.btn-showMore {
+    display: none;
+}
+
+@media (max-width: 480px) {
+    .btn-showMore {
+        display: block;
+        width: 100%;
+        color: var(--black, #232323);
+        text-align: center;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 14px;
+        border-radius: 4px;
+        background: var(--yellow, #FBE200);
+        padding: 23px 0;
+        margin-top: 15px;
     }
 }

@@ -80,7 +80,7 @@
 
         <section class="model wrapper">
             <ul class="model-nav">
-                <li class="model-nav__item">Новые авто</li>
+                <li class="model-nav__item model-nav__item--active">Новые авто</li>
                 <li class="model-nav__item">Авто с пробегом</li>
                 <li class="model-nav__item">Семейные авто</li>
                 <li class="model-nav__item">Кроссоверы</li>
@@ -286,6 +286,7 @@
                     </div>
                 </li>
             </ul>
+            <button class="btn-showMore">Показать больше</button>
         </section>
 
         <section class="newCars carsGrid wrapper">
@@ -2118,66 +2119,6 @@
             <button class="carsGrid__btn-seeMore">Показать все</button>
         </section>
 
-        <section class="recommended wrapper">
-            <p class="wrapper__header-title">Рекомендованные подборки</p>
-            <ul class="recommended__list">
-                <li class="recommended__list__item">
-                    <div class="recommended__list__item-promo">
-                        <img class="recommended__list__item-promo__img" src="/images/recommended/img1.png" alt="">
-                    </div>
-                    <div class="recommended__list__item-info">
-                        <p class="recommended__list__item-info__title">Внедорожники</p>
-                        <p class="recommended__list__item-info__subtitle">2 148 авто</p>
-                    </div>
-                </li>
-                <li class="recommended__list__item">
-                    <div class="recommended__list__item-promo">
-                        <img class="recommended__list__item-promo__img" src="/images/recommended/img2.png" alt="">
-                    </div>
-                    <div class="recommended__list__item-info">
-                        <p class="recommended__list__item-info__title">Кроссоверы</p>
-                        <p class="recommended__list__item-info__subtitle">2 148 авто</p>
-                    </div>
-                </li>
-                <li class="recommended__list__item">
-                    <div class="recommended__list__item-promo">
-                        <img class="recommended__list__item-promo__img" src="/images/recommended/img3.png" alt="">
-                    </div>
-                    <div class="recommended__list__item-info">
-                        <p class="recommended__list__item-info__title">Семейные авто</p>
-                        <p class="recommended__list__item-info__subtitle">2 148 авто</p>
-                    </div>
-                </li>
-                <li class="recommended__list__item">
-                    <div class="recommended__list__item-promo">
-                        <img class="recommended__list__item-promo__img" src="/images/recommended/img4.png" alt="">
-                    </div>
-                    <div class="recommended__list__item-info">
-                        <p class="recommended__list__item-info__title">Премиум авто</p>
-                        <p class="recommended__list__item-info__subtitle">2 148 авто</p>
-                    </div>
-                </li>
-                <li class="recommended__list__item">
-                    <div class="recommended__list__item-promo">
-                        <img class="recommended__list__item-promo__img" src="/images/recommended/img5.png" alt="">
-                    </div>
-                    <div class="recommended__list__item-info">
-                        <p class="recommended__list__item-info__title">Недорогие авто</p>
-                        <p class="recommended__list__item-info__subtitle">2 148 авто</p>
-                    </div>
-                </li>
-                <li class="recommended__list__item">
-                    <div class="recommended__list__item-promo">
-                        <img class="recommended__list__item-promo__img" src="/images/recommended/img6.png" alt="">
-                    </div>
-                    <div class="recommended__list__item-info">
-                        <p class="recommended__list__item-info__title">Седаны</p>
-                        <p class="recommended__list__item-info__subtitle">2 148 авто</p>
-                    </div>
-                </li>
-            </ul>
-        </section>
-
         <section class="services">
             <div class="wrapper">
                 <p class="wrapper__header-title">Предоставляемые услуги</p>
@@ -2239,11 +2180,70 @@
             </div>
         </section>
 
+        <section class="recommended wrapper">
+            <p class="wrapper__header-title">Рекомендованные подборки</p>
+            <ul class="recommended__list">
+                <li class="recommended__list__item">
+                    <div class="recommended__list__item-promo">
+                        <img class="recommended__list__item-promo__img" src="/images/recommended/img1.png" alt="">
+                    </div>
+                    <div class="recommended__list__item-info">
+                        <p class="recommended__list__item-info__title">Внедорожники</p>
+                        <p class="recommended__list__item-info__subtitle">2 148 авто</p>
+                    </div>
+                </li>
+                <li class="recommended__list__item">
+                    <div class="recommended__list__item-promo">
+                        <img class="recommended__list__item-promo__img" src="/images/recommended/img2.png" alt="">
+                    </div>
+                    <div class="recommended__list__item-info">
+                        <p class="recommended__list__item-info__title">Кроссоверы</p>
+                        <p class="recommended__list__item-info__subtitle">2 148 авто</p>
+                    </div>
+                </li>
+                <li class="recommended__list__item">
+                    <div class="recommended__list__item-promo">
+                        <img class="recommended__list__item-promo__img" src="/images/recommended/img3.png" alt="">
+                    </div>
+                    <div class="recommended__list__item-info">
+                        <p class="recommended__list__item-info__title">Семейные авто</p>
+                        <p class="recommended__list__item-info__subtitle">2 148 авто</p>
+                    </div>
+                </li>
+                <li class="recommended__list__item">
+                    <div class="recommended__list__item-promo">
+                        <img class="recommended__list__item-promo__img" src="/images/recommended/img4.png" alt="">
+                    </div>
+                    <div class="recommended__list__item-info">
+                        <p class="recommended__list__item-info__title">Премиум авто</p>
+                        <p class="recommended__list__item-info__subtitle">2 148 авто</p>
+                    </div>
+                </li>
+                <li class="recommended__list__item">
+                    <div class="recommended__list__item-promo">
+                        <img class="recommended__list__item-promo__img" src="/images/recommended/img5.png" alt="">
+                    </div>
+                    <div class="recommended__list__item-info">
+                        <p class="recommended__list__item-info__title">Недорогие авто</p>
+                        <p class="recommended__list__item-info__subtitle">2 148 авто</p>
+                    </div>
+                </li>
+                <li class="recommended__list__item">
+                    <div class="recommended__list__item-promo">
+                        <img class="recommended__list__item-promo__img" src="/images/recommended/img6.png" alt="">
+                    </div>
+                    <div class="recommended__list__item-info">
+                        <p class="recommended__list__item-info__title">Седаны</p>
+                        <p class="recommended__list__item-info__subtitle">2 148 авто</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
         <section class="new-products">
             <div class="wrapper">
                 <div class="wrapper__header">
                     <p class="wrapper__header-title-light">Наши новинки</p>
-                    <a class="wrapper__header-link-light" href="#">Подробнее</a>
                 </div>
                 <ul class="new-products__list">
                     <li class="new-products__list__item">
@@ -2271,12 +2271,13 @@
                         </div>
                     </li>
                 </ul>
+                <button class="btn-showMore">Показать больше</button>
             </div>
         </section>
 
         <section class="promotions wrapper">
             <div class="wrapper__header">
-                <p class="wrapper__header-title">Акции и спецпредложения</p>
+                <p class="wrapper__header-title">Акции и специальные предложения</p>
                 <a class="wrapper__header-link" href="#">Показать все</a>
             </div>
             <ul class="promotions-list">
@@ -2328,18 +2329,22 @@
             <div class="feedback__container">
                 <div class="feedback__left-block">
                     <p class="feedback__left-block-title">Выгодный <span>TRADE-IN</span></p>
-                    <p class="feedback__left-block-subtitle">Оценим и обменяем ваш автомобиль на выгодных условиях</p>
+                    <p class="feedback__left-block-subtitle">Оценим и обменяем ваш автомобиль на выгодных условиях</p>
                 </div>
                 <div class="feedback__right-block">
                     <form action="" class="feedback__right-block-form">
                         <input class="feedback__right-block-form__input" type="text" placeholder="Ваше имя">
-                        <input class="feedback__right-block-form__input" type="text" placeholder="Телефон">
-                        <button class="feedback__right-block-form__button" type="submit">Отправить</button>
+                        <input class="feedback__right-block-form__input" type="text" placeholder="+7 (XXX) XXX-XX-XX">
+                        <button class="feedback__right-block-form__button feedback__right-block-form__button--desctop" type="submit">Отправить</button>
                     </form>
-                    <p class="feedback__right-block-description">
-                        Нажимая кнопку «Отправить» вы соглашаетесь на обработку
-                        <span>персональных данных</span>
-                    </p>
+                    <div class="feedback__right-block-checkbox">
+                        <input type="checkbox" id="myCheckbox">
+                        <label for="myCheckbox">
+                            Нажимая кнопку «Отправить» вы соглашаетесь на обработку
+                            <a href="">персональных данных</a>
+                        </l>
+                    </div>
+                    <button class="feedback__right-block-form__button feedback__right-block-form__button--mobile" type="submit">Отправить</button>
                 </div>
             </div>
         </section>
@@ -2382,6 +2387,7 @@
                     </div>
                 </li>
             </ul>
+            <a class="wrapper__header-link-more" href="#">Показать больше</a>
         </section>
     </main>
 
