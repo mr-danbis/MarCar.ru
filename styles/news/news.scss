@@ -67,6 +67,15 @@
             }
         }
     }
+    &__general {
+        &__title {
+            color: $main-black;
+            font-size: 50px;
+            font-weight: 700;
+            line-height: 60px;
+            margin-bottom: 30px;
+        }
+    }
     &__list-benefit {
         gap: 15px;
         display: flex;
