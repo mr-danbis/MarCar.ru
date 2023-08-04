@@ -524,7 +524,7 @@
             padding: 14px 24px;
             &:hover{
                 .navigation-sublist__item-content{
-                    opacity: 1;
+                    display: block;
                 }
 
                 .icon-arrow{
@@ -573,8 +573,7 @@
 
             &-content {
                 z-index: 10;
-                opacity: 0;
-                transition: opacity .3s;
+                display: none;
                 width: 825px;
                 position: absolute;
                 top: 0;
