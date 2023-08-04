@@ -22,97 +22,101 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 const toggleDropdown = (dropdownId) => {
-  let dropdown = document.getElementById("dropdown-" + dropdownId);
-  let header = document.querySelector(".header");
-  let mainContent = document.querySelector(".main-content");
+    let dropdown = document.getElementById("dropdown-" + dropdownId);
+    let header = document.querySelector(".header");
+    let mainContent = document.querySelector(".main-content");
 
-  if (dropdown.classList.contains("active")) {
-    dropdown.classList.remove("active");
-    header.classList.remove("dropdown-active");
-    mainContent.classList.remove("dropdown-active");
-  } else {
-    let activeDropdown = document.querySelector(".dropdown-content.active");
-    if (activeDropdown) {
-      activeDropdown.classList.remove("active");
+    if (dropdown.classList.contains("active")) {
+        dropdown.classList.remove("active");
+        header.classList.remove("dropdown-active");
+        mainContent.classList.remove("dropdown-active");
+    } else {
+        let activeDropdown = document.querySelector(".dropdown-content.active");
+        if (activeDropdown) {
+            activeDropdown.classList.remove("active");
+        }
+        dropdown.classList.add("active");
+        header.classList.add("dropdown-active");
+        mainContent.classList.add("dropdown-active");
     }
-    dropdown.classList.add("active");
-    header.classList.add("dropdown-active");
-    mainContent.classList.add("dropdown-active");
-  }
 };
 
 const closeDropdown = (dropdownId) => {
-  let dropdown = document.getElementById("dropdown-" + dropdownId);
-  let header = document.querySelector(".header");
-  let mainContent = document.querySelector(".main-content");
+    let dropdown = document.getElementById("dropdown-" + dropdownId);
+    let header = document.querySelector(".header");
+    let mainContent = document.querySelector(".main-content");
 
-  dropdown.classList.remove("active");
-  header.classList.remove("dropdown-active");
-  mainContent.classList.remove("dropdown-active");
+    dropdown.classList.remove("active");
+    header.classList.remove("dropdown-active");
+    mainContent.classList.remove("dropdown-active");
 };
 
 
 const videPlayer = (videoContainers, video) => {
-  const VIDEOCONTAINERS = document.querySelectorAll(videoContainers);
-  const VIDEO = video;
+    const VIDEOCONTAINERS = document.querySelectorAll(videoContainers);
+    const VIDEO = video;
 
-  VIDEOCONTAINERS.forEach((videoContainer) => {
-    let player = new Plyr(videoContainer.querySelector(VIDEO));
+    VIDEOCONTAINERS.forEach((videoContainer) => {
+        let player = new Plyr(videoContainer.querySelector(VIDEO));
 
-    videoContainer.addEventListener('ended', () => {
-      videoContainer.querySelector('.video-icon').style.display = 'block';
+        videoContainer.addEventListener('ended', () => {
+            videoContainer.querySelector('.video-icon').style.display = 'block';
+        });
+
+        videoContainer.addEventListener('mouseenter', () => {
+            videoContainer.querySelector('.video-icon').style.opacity = '1';
+        });
+
+        videoContainer.addEventListener('mouseleave', () => {
+            if (VIDEO.paused || VIDEO.ended) {
+                videoContainer.querySelector('.video-icon').style.opacity = '1';
+            } else {
+                videoContainer.querySelector('.video-icon').style.opacity = '0';
+            }
+        });
     });
-
-    videoContainer.addEventListener('mouseenter', () => {
-      videoContainer.querySelector('.video-icon').style.opacity = '1';
-    });
-
-    videoContainer.addEventListener('mouseleave', () => {
-      if (VIDEO.paused || VIDEO.ended) {
-        videoContainer.querySelector('.video-icon').style.opacity = '1';
-      } else {
-        videoContainer.querySelector('.video-icon').style.opacity = '0';
-      }
-    });
-  });
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  videPlayer(".service__video-content", ".video");
+    videPlayer(".service__video-content", ".video");
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-  videPlayer(".about-video-content", ".video");
+    videPlayer(".about-video-content", ".video");
 });
 
 const handleToggleText = (containerSelector, subtitleSelector, readMoreSelector, collapseSelector, maxHeight) => {
-  const container = document.querySelector(containerSelector);
-  const subtitle = container.querySelector(subtitleSelector);
-  const btnReadMore = container.querySelector(readMoreSelector);
-  const btnCollapse = container.querySelector(collapseSelector);
+    const container = document.querySelector(containerSelector);
+    const subtitle = container && container.querySelector(subtitleSelector);
+    const btnReadMore = container && container.querySelector(readMoreSelector);
+    const btnCollapse = container && container.querySelector(collapseSelector);
 
-  btnReadMore.addEventListener('click', () => {
-    subtitle.style.maxHeight = subtitle.scrollHeight + 'px';
-    btnReadMore.style.display = 'none';
-    btnCollapse.style.display = 'flex';
-  });
+    if (!container || !subtitle || !btnReadMore || !btnCollapse) {
+        return; // Выход из функции, если хотя бы одного элемента нет на странице
+    }
 
-  btnCollapse.addEventListener('click', () => {
-    subtitle.style.maxHeight = maxHeight;
-    btnCollapse.style.display = 'none';
-    btnReadMore.style.display = 'flex';
-    subtitle.scrollTop = 0; 
-  });
+    btnReadMore.addEventListener('click', () => {
+        subtitle.style.maxHeight = subtitle.scrollHeight + 'px';
+        btnReadMore.style.display = 'none';
+        btnCollapse.style.display = 'flex';
+    });
+
+    btnCollapse.addEventListener('click', () => {
+        subtitle.style.maxHeight = maxHeight;
+        btnCollapse.style.display = 'none';
+        btnReadMore.style.display = 'flex';
+        subtitle.scrollTop = 0;
+    });
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  handleToggleText('.seo-info__content', '.seo-info__subtitle', '#btn-read-more-seo', '#btn-collapse-seo', '208px');
+    handleToggleText('.seo-info__content', '.seo-info__subtitle', '#btn-read-more-seo', '#btn-collapse-seo', '208px');
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-  handleToggleText('.service__maintenance-collapse__container', '.service__maintenance-collapse__content', '#btn-read-more-service', '#btn-collapse-service', '290px');
+    handleToggleText('.service__maintenance-collapse__container', '.service__maintenance-collapse__content', '#btn-read-more-service', '#btn-collapse-service', '290px');
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-  handleToggleText('.service-car-rental__first-block__container', '.service-car-rental__first-block__content', '#btn-read-more-car-rental', '#btn-collapse-car-rental', '138px');
+    handleToggleText('.service-car-rental__first-block__container', '.service-car-rental__first-block__content', '#btn-read-more-car-rental', '#btn-collapse-car-rental', '138px');
 });
