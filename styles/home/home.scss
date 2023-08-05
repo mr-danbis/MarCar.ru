@@ -297,11 +297,14 @@
         flex-wrap: wrap;
 
         &__item {
-            gap: 10px;
-            display: flex;
             border-radius: 4px;
             background: #FBFBFB;
             padding: 17px 15px 17px 20px;
+
+            a{
+                gap: 10px;
+                display: flex;
+            }
 
             &-img {
                 width: 60px;

@@ -360,7 +360,7 @@
         color: $white;
         background-size: 100%;
         padding: 61px 119px 60px 70px;
-        background-image: url(/images/feedback-fon.svg);
+        background-image: url(../..../../images/feedback-fon.svg);
         background-repeat: no-repeat;
         background-color: #000;
         background-size: cover;
@@ -707,7 +707,7 @@
             flex-direction: column;
         }
         &__left-block {
-            background-image: url(/images/feedback-fon-mob.svg);
+            background-image: url(../..../../images/feedback-fon-mob.svg);
             padding: 35px 25px 20px 25px;
             &-title {
                 font-size: 24px;
