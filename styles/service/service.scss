@@ -226,6 +226,66 @@
             margin-top: 20px;
         }
     }
+    &__submain-content{
+        &__info-centers{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 79px;
+            &__title{
+                width: 100%;
+                color: #000;
+                font-size: 28px;
+                font-weight: 700;
+                line-height: 38px;
+                margin-bottom: 25px;
+            }
+            &__list{
+                width: 100%;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-gap: 14px 20px;
+                margin-bottom: 41px;
+                &__link{
+                    display: flex;
+                }
+                &__item{
+                    &-img{
+                        margin-right: 6px;
+                    }
+                    &-info{
+                        &__title{
+                            color: var(--black, #232323);
+                            font-size: 13px;
+                            font-weight: 500;
+                            line-height: 18px;
+                            margin-bottom: 2px;
+                        }
+                        &__subtitle{
+                            color: var(--sub-black-text, #575757);
+                            font-size: 10px;
+                            font-weight: 400;
+                            line-height: 10px;
+                        }
+                    }
+                }
+            }
+            &__button{
+                border-radius: 4px;
+                background: var(--main-blue, #248FEC);
+                color: #FFF;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 24px;
+                padding: 13px 53px;
+                transition: all .3s;
+                &:hover{
+                    background: var(--yellow, #FBE200);
+                    color: var(--black, #232323);
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 480px) {
@@ -325,53 +385,39 @@
                 }
             }
         }
-        &__submain-content {
-            width: 100%;
-            &__callback {
-                display: none;
-            }
-            &__info-centers {
-                margin-top: 20px;
-                padding: 40px 0;
-                &__title {
-                    font-size: 26px;
-                    line-height: 36px;
-                }
-                &__list {
-                    width: 100%; 
-                    gap: 9px;
-                    &__item {
-                        width: 160px;
-                    }
-                }
-                &__button {
-                    color: #FFF;
-                    width: 100%;
-                    display: block;
-                    padding: 13px 0;
-                    margin: 41px auto 0;
-                    font-size: 14px;
-                    font-weight: 500;
-                    line-height: 24px;
-                    border-radius: 4px;
-                    background: var(--main-blue, #248FEC);
-                }
-            }
-        }
-        &__sub-info__nav-list {
-            margin-top: 21px;
-            &__item-content {
-                gap: 8px;
-                padding: 15px;
-                &-img {
-                    width: 24px;
-                    height: 24px;
-                }
-                &-text {
-                    font-size: 14px;
-                }
-            }
-        }
+        // &__submain-content {
+        //     width: 100%;
+        //     &__callback {
+        //         display: none;
+        //     }
+        //     &__info-centers {
+        //         margin-top: 20px;
+        //         padding: 40px 0;
+        //         &__title {
+        //             font-size: 26px;
+        //             line-height: 36px;
+        //         }
+        //         &__list {
+        //             width: 100%; 
+        //             gap: 9px;
+        //             &__item {
+        //                 width: 160px;
+        //             }
+        //         }
+        //         &__button {
+        //             color: #FFF;
+        //             width: 100%;
+        //             display: block;
+        //             padding: 13px 0;
+        //             margin: 41px auto 0;
+        //             font-size: 14px;
+        //             font-weight: 500;
+        //             line-height: 24px;
+        //             border-radius: 4px;
+        //             background: var(--main-blue, #248FEC);
+        //         }
+        //     }
+        // }
         &__benefit-container {
             gap: 0;
             flex-direction: column;
