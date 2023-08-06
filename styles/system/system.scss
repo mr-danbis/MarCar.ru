@@ -1,3 +1,4 @@
+@import "../components/components.scss";
 @import "../colors/colors.scss";
 
 .system {
@@ -24,6 +25,225 @@
             line-height: 24px;
             text-align: center;
         }
+    }
+    &__contact {
+        &__big-title {
+            color: $main-black;
+            font-size: 50px;
+            font-weight: 700;
+            line-height: 60px;
+            span {
+                color: $blue;
+            }
+        }
+        &__subtitle {
+            width: 550px;
+            color: $main-black;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 28px;
+        }
+        &__text-block-first {
+            gap: 5px;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 40px;
+        }
+        &__block {
+            gap: 5px;
+            display: flex;
+            align-items: center;
+            &-icon {
+                width: 24px;
+                height: 24px;
+            }
+            &-text {
+                color: $main-black;
+                font-size: 15px;
+                font-weight: 500;
+                line-height: 24px;
+                & span {
+                    color: $sub-black;
+                }
+            }
+        }
+        &__info-list {
+            width: 570px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px 100px;
+            margin-top: 25px;
+            &__item {
+                width: 235px;
+            }
+        }
+        &__dealer {
+            margin: 70px 0;
+            &-title {
+                color: $black;
+                font-size: 45px;
+                font-weight: 700;
+                line-height: 55px;
+                margin-bottom: 34px;
+            }
+            &-list {
+                gap: 50px;
+                display: flex;
+                &__item {
+                    width: 525px;
+                    border-radius: 8px;
+                    border: 1px solid #F4F4F4;
+                    background: $white;
+                    box-shadow: 0px 14px 90px 0px rgba(0, 0, 0, 0.06);
+                    &-img {
+                        width: 100%;
+                        height: auto;
+                    }
+                    &-content {
+                        margin: 0 30px;
+                        &__city {
+                            color: $blue;
+                            font-size: 13px;
+                            font-weight: 500;
+                            line-height: 18px;
+                            margin: 20px 0 2px;
+                        }
+                        &__title {
+                            color: $main-black;
+                            font-size: 20px;
+                            font-weight: 700;
+                            line-height: 30px;
+                        }
+                        &__subtitle {
+                            color: $sub-black;
+                            font-size: 14px;
+                            font-weight: 400;
+                            line-height: 20px;
+                        }
+                        &__info {
+                            gap: 30px;
+                            display: flex;
+                            margin: 15px 0;
+                            &-text {
+                                color: $sub-black;
+                                font-size: 13px;
+                                font-weight: 400;
+                                line-height: 18px;
+                                & span {
+                                    color: $main-black;
+                                    margin-left: 5px;
+                                }
+                            }
+                        }
+                        &__button {
+                            width: 331px;
+                            color: $white;
+                            display: block;
+                            padding: 18px 0;
+                            font-size: 16px;
+                            font-weight: 500;
+                            line-height: 24px;
+                            border-radius: 8px;
+                            background: $blue;
+                            margin: 40px auto 50px;
+                            box-shadow: 0px 14px 24px 0px rgba(36, 143, 236, 0.18);
+                        }
+                    }
+                }
+            }
+        }
+        &__map-content {
+            width: 100%;
+            height: 400px;
+            &__map {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        &__form {
+            margin: 70px 0 90px;
+            &-header {
+                &__title {
+                    color: $main-black;
+                    font-size: 34px;
+                    font-weight: 700;
+                    line-height: 44px;
+                    & span {
+                        color: $blue;
+                    }
+                }
+            }
+            &-main {
+                gap: 15px;
+                display: flex;
+                flex-wrap: wrap;
+                margin: 41px 0 15px;
+                &__input {
+                    width: 100%;
+                    max-width: 318px;
+                    padding: 13px 18px;
+                    border-radius: 4px;
+                    background: #FAFAFA;
+                    border: 1px solid #EDEDED;
+                    &::placeholder {
+                        color: #7C7C7C;
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 24px;
+                    }
+                }
+                &__textarea {
+                    border: 0;
+                    width: 100%;
+                    max-width: 1062px;
+                    height: 160px;
+                    border-radius: 4px;
+                    padding: 13px 18px;
+                    border: 1px solid #EDEDED;
+                    background: #FAFAFA;
+                    &::placeholder {
+                        color: #7C7C7C;
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 24px;
+                    }
+                }
+            }
+            &-footer {
+                display: flex;
+                justify-content: space-between;
+                &__left-block {
+                    gap: 10px;
+                    display: flex;
+                    align-items: center;
+                }
+                &__checkbox {
+                    cursor: pointer;
+                }
+                &__text {
+                    color: $main-black;
+                    font-size: 13px;
+                    font-weight: 400;
+                    line-height: 18px;
+                    & a {
+                        color: $blue;
+                        text-decoration-line: underline;
+                    }
+                }
+                &__button {
+                    color: #FFF;
+                    font-size: 14px;
+                    font-weight: 700;
+                    line-height: 18px;
+                    padding: 18px 54px;
+                    border-radius: 4px;
+                    background: $blue;
+                }
+            }
+        }
+    }
+    &__favorites {
+        margin: 0 auto 90px!important;
     }
 }
 
@@ -57,10 +277,98 @@
     }
 }
 
-@media (max-width: 480px) {
+@media (min-width: 1401px) and (max-width: 1600px) {
+    .system {
+        &__contact {
+            &__form {
+                &-main {
+                    &__input {
+                        max-width: 252px;
+                    }
+                    &__textarea {
+                        min-width: 756px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 771px) and (max-width: 1400px) {
+    .system {
+        &__contact {
+            &__dealer{
+                &-list {
+                    flex-wrap: wrap;
+                    &__item {
+                        width: 100%;
+                    }
+                }
+            }
+            &__form {
+                width: 570px;
+                &-main {
+                    gap: 15px;
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    margin: 41px 0 15px;
+                    &__input {
+                        max-width: 534px;
+                    }
+                    &__textarea {
+                        max-width: 534px;
+                    }
+                }
+                &-footer {
+                    gap: 15px;
+                    flex-direction: column;
+                }
+            }
+            &__right-block {
+                margin-bottom: 40px;
+            }
+        }       
+    }
+}
+
+@media (min-width: 375px) and (max-width: 575px) {
     .system {
         &__not-data__subtitle {
             width: 345px;
+        }
+        &__contact {
+            &__dealer{
+                &-list {
+                    gap: 30px;
+                    flex-wrap: wrap;
+                    &__item {
+                        width: 100%;
+                    }
+                }
+            }
+            &__form {
+                width: 345px;
+                margin: 40px 0 70px;
+                &-main {
+                    gap: 10px;
+                    flex-direction: column;
+                    margin: 30px auto 20px;
+                    &__input {
+                        max-width: 309px;
+                    }
+                    &__textarea {
+                        max-width: 309px;
+                    }
+                }
+                &-footer {
+                    gap: 40px;
+                    flex-direction: column;
+                }
+            }
+            &__right-block {
+                margin-bottom: 40px;
+            }
         }
     }
     .not-found__title {

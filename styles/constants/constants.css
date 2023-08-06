@@ -113,7 +113,7 @@ p {
   flex-direction: column;
 }
 .number-list__item {
-  color: #232323;
+  color: #000000;
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
@@ -151,7 +151,7 @@ p {
   flex-direction: column;
 }
 .list-company__item-info__title {
-  color: #232323;
+  color: #000000;
   font-size: 15px;
   font-weight: 700;
   line-height: 20px;
@@ -248,7 +248,7 @@ p {
 .block-contact__text-dark, .block-contact__text-light {
   font-size: 15px;
   font-weight: 600;
-  color: #232323;
+  color: #000000;
 }
 .block-contact__text-light {
   color: #ffffff;
@@ -270,7 +270,7 @@ p {
   transition: color 0.5s ease, background-color 0.5s ease;
 }
 .btn-blue:hover {
-  color: #232323;
+  color: #000000;
   background-color: #FBE200;
 }
 
