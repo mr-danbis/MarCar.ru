@@ -129,6 +129,100 @@
     }
 }
 
+.sms {
+    &__wrapper {
+        padding: 204px 0;
+        position: relative;
+        height: 100%;
+    }
+    &__container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 800px;
+    }
+    &__link-back {
+        gap: 5px;
+        width: 151px;
+        display: flex;
+        align-items: center;
+        padding: 12px 22px 12px 10px;
+        border-radius: 999px;
+        border: 1px solid #FFF;
+        position: absolute;
+        right: 517px;
+        & img {
+            width: 30px;
+            height: 30px;
+        }
+        & span {
+            color: #FFF;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 18px;
+        }
+    }
+    &__form {
+        padding: 0 50px 30px;
+        width: 230px;
+        display: flex;
+        border-radius: 8px;
+        background: #FFF;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        box-shadow: 0px 4px 140px 0px rgba(0, 0, 0, 0.08);
+        & img {
+            margin-top: -50px;
+        }
+        &__text {
+            color: var(--sub-black-text, #575757);
+            text-align: center;
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 18px;
+            margin: 10px 0;
+        }
+        &__input-container {
+            gap: 10px;
+            display: flex;
+        }
+        &__input {
+            width: 30px;
+            padding: 15px 10px;
+            border-radius: 4px;
+            border: 1px solid #EDEDED;
+            background: #FAFAFA;
+        }
+        &__btn {
+            margin-top: 25px;
+            color: #000;
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 18px;
+            padding: 0 0 5px;
+            background: transparent;
+            border-bottom: 1px solid #248FEC;;
+        }
+    }
+}
+
+@media (max-width: 1100px) {
+    .sms {
+        &__link-back {
+            position: static;
+        }
+        &__container {
+            flex-direction: column-reverse;
+            gap: 25px;
+        }
+    }
+}
+
 @media (min-width: 470px) and (max-width: 600px) {
     .login__form {
         width: 390px;
@@ -168,6 +262,7 @@
         }
     }
 }
+
 @media (min-width: 320px) and (max-width: 374px) {
     .login {
         text-align: center;
