@@ -1149,4 +1149,201 @@ p {
   .filter-form__container__input:nth-child(odd) {
     border-left: none;
   }
-}/*# sourceMappingURL=components.css.map */
+}
+.login {
+  padding: 102px 0;
+  background: var(--gradient, linear-gradient(48deg, #2775B8 0%, #44A8FF 100%)) left/50% 100% no-repeat, #FFFFFF right/50% 100% no-repeat;
+}
+.login__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login__form {
+  width: 559px;
+  display: flex;
+  border-radius: 8px;
+  background: #FFF;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 0px 4px 140px 0px rgba(0, 0, 0, 0.08);
+}
+.login__form__img {
+  margin-top: -50px;
+}
+.login__form__content {
+  margin: 20px 70px 35px;
+}
+.login__form__header {
+  gap: 6px;
+  display: flex;
+  margin: 30px 0 25px;
+}
+.login__form__header__btn {
+  color: #7C7C7C;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  width: 207px;
+  padding: 12px 0;
+  border-radius: 4px;
+  background-color: #FBFBFB;
+  transition: color 0.5s ease, background-color 0.5s ease;
+}
+.login__form__header__btn:hover {
+  color: #FFF;
+  background: var(--gradient, linear-gradient(48deg, #2775B8 0%, #44A8FF 100%));
+  box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.08);
+}
+.login__form__input-group {
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+.login__form__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.login__title {
+  color: #000;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 34px;
+  margin-bottom: 5px;
+}
+.login__subtitle {
+  color: var(--sub-black-text, #575757);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+}
+.login__input {
+  color: #7C7C7C;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  padding: 13px 18px;
+  border-radius: 4px;
+  background: #FAFAFA;
+  border: 1px solid #EDEDED;
+}
+.login__btn-change {
+  color: #FFF;
+  background: var(--gradient, linear-gradient(48deg, #2775B8 0%, #44A8FF 100%));
+  box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.08);
+}
+.login__signin-btn, .login__signup-btn {
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  padding: 18px 0;
+  border-radius: 4px;
+  background: var(--main-blue, #248FEC);
+}
+.login__signup-btn {
+  width: 237px;
+  display: block;
+  margin: 0 auto;
+}
+.login__signin-btn {
+  width: 131px;
+}
+.login__link-restore {
+  color: #000;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #248FEC;
+}
+.login__checkbox-container {
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.login__checkbox-title {
+  color: var(--black, #232323);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+}
+.login__checkbox-title a {
+  text-decoration-line: underline;
+  color: var(--main-blue, #248FEC);
+}
+
+@media (min-width: 470px) and (max-width: 600px) {
+  .login__form {
+    width: 390px;
+    padding: 0 25px;
+  }
+}
+@media (min-width: 375px) and (max-width: 469px) {
+  .login {
+    text-align: center;
+  }
+  .login__form {
+    width: 300px;
+    padding: 0 15px;
+  }
+  .login__form__content {
+    margin: 20px 15px 35px;
+  }
+  .login__form__header {
+    gap: 5px;
+    margin: 15px 0 20px;
+  }
+  .login__form__header__btn {
+    width: 135px;
+  }
+  .login__form__footer {
+    gap: 10px;
+    flex-direction: column;
+  }
+  .login__title {
+    font-size: 18px;
+  }
+  .login__subtitle {
+    font-size: 15px;
+  }
+  .login__signin-btn, .login__signup-btn {
+    width: 100%;
+  }
+}
+@media (min-width: 320px) and (max-width: 374px) {
+  .login {
+    text-align: center;
+  }
+  .login__form {
+    width: 270px;
+    padding: 0 15px;
+  }
+  .login__form__content {
+    margin: 20px 15px 35px;
+  }
+  .login__form__header {
+    gap: 5px;
+    margin: 15px 0 20px;
+  }
+  .login__form__header__btn {
+    width: 135px;
+  }
+  .login__form__footer {
+    gap: 10px;
+    flex-direction: column;
+  }
+  .login__title {
+    font-size: 18px;
+  }
+  .login__subtitle {
+    font-size: 15px;
+  }
+  .login__signin-btn, .login__signup-btn {
+    width: 100%;
+  }
+}/*# sourceMappingURL=account.css.map */

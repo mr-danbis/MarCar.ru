@@ -92,7 +92,7 @@ const handleToggleText = (containerSelector, subtitleSelector, readMoreSelector,
     const btnCollapse = container && container.querySelector(collapseSelector);
 
     if (!container || !subtitle || !btnReadMore || !btnCollapse) {
-        return; // Выход из функции, если хотя бы одного элемента нет на странице
+        return;
     }
 
     btnReadMore.addEventListener('click', () => {

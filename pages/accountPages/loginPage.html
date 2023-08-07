@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="/images/logoBlue.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/header/header.css">
+    <link rel="stylesheet" href="/styles/footer/footer.css">
+    <link rel="stylesheet" href="/styles/account/account.css">
+    <title>MARCAR</title>
+</head>
+<body>
+    <div id="header"></div>
+
+    <main class="login">
+        <div class="login__container">
+            <form action="" class="login__form">
+                <img src="/images/icons/loginLogoIcon.svg" alt="" class="login__form__img">
+                <div class="login__form__content">
+                    <h1 class="login__title">
+                        Ранее регистрировали аккаунт?
+                    </h1>
+                    <p class="login__subtitle">
+                        Если Вы еще не имеете аккаунта, то предлагаем 
+                        пройти быструю регистрацию на нашем сервисе.
+                    </p>
+                    <div class="login__form__header">
+                        <button type="button" class="login__form__header__btn login__btn-change" id="login-btn">Вход</button>
+                        <button type="button" class="login__form__header__btn" id="register-btn">Регистрация</button>
+                    </div>
+                    <div class="login__form__input-group" id="signin-inputs">
+                        <input type="text" placeholder="+7 (ХХХ) ХХХ-ХХ-ХХ" class="login__input">
+                        <input type="password" placeholder="Ваш пароль" class="login__input">
+                    </div>
+                    <div class="login__form__input-group" id="signup-inputs" style="display: none;">
+                        <input type="text" placeholder="Фамилия" class="login__input">
+                        <input type="text" placeholder="Имя" class="login__input">
+                        <input type="text" placeholder="Отчество" class="login__input">
+                        <input type="text" placeholder="+7 (ХХХ) ХХХ-ХХ-ХХ" class="login__input">
+                        <div class="login__checkbox-container">
+                            <input type="checkbox" name="" id="">
+                            <h1 class="login__checkbox-title">
+                                Согласие на обработку <a href="">персональных данных</a>
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="login__form__footer" id="signin-footer">
+                        <a href="/pages/accountPages/smsPage.html" class="login__link-restore">Восстановить пароль</a>
+                        <button class="login__signin-btn">Войти</button>
+                    </div>
+                    <div class="login__form__footer" id="signup-footer" style="display: none;">
+                        <button class="login__signup-btn">Зарегистрироваться</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <div id="footer"></div>
+
+    <script src="/scripts/account.js"></script>
+    <script src="/scripts/main.js"></script>
+</body>
+</html>
