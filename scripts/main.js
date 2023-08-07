@@ -92,7 +92,7 @@ const handleToggleText = (containerSelector, subtitleSelector, readMoreSelector,
     const btnCollapse = container && container.querySelector(collapseSelector);
 
     if (!container || !subtitle || !btnReadMore || !btnCollapse) {
-        return; // Выход из функции, если хотя бы одного элемента нет на странице
+        return;
     }
 
     btnReadMore.addEventListener('click', () => {
@@ -118,5 +118,9 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-    handleToggleText('.service-car-rental__first-block__container', '.service-car-rental__first-block__content', '#btn-read-more-car-rental', '#btn-collapse-car-rental', '138px');
+    handleToggleText('.service__benefit-container', '.service__list-benefit', '#btn-read-more-service', '#btn-collapse-service', '138px');
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    handleToggleText('.service__benefit-container-2', '.service__list-benefit-2', '#btn-read-more-service-2', '#btn-collapse-service-2', '138px');
 });

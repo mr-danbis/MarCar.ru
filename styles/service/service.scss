@@ -86,8 +86,8 @@
     }
 
     &__benefit-container {
-        gap: 50px;
         display: flex;
+        flex-direction: column;
     }
 
     &__benifit-content {
@@ -416,6 +416,13 @@
             }
         }
     }
+    &-lists{
+        display: flex;
+        justify-content: space-between;
+        .service__benifit-content{
+            width: 800px;
+        }
+    }
 }
 
 .selectionByParameters {
@@ -451,13 +458,7 @@
         }
 
         &__item {
-            width: 345px;
-
-            img {
-                width: 100%;
-                height: 309px;
-                object-fit: cover;
-            }
+            width: auto;
 
             &-title {
                 font-size: 15px;
@@ -470,6 +471,13 @@
             &-top {
                 &_info {
                     justify-content: flex-end;
+                }
+                &_slider{
+                    img {
+                        width: 100%;
+                        height: 240px;
+                        object-fit: cover;
+                    }
                 }
             }
 

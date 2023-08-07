@@ -239,6 +239,12 @@ p {
     }
 }
 
+.btn-read-more-color{
+    span{
+        color: var(--main-blue, #248FEC);
+    }
+}
+
 .btn-collapse {
     display: none;
 
@@ -311,6 +317,42 @@ p {
 
 .btn-showMore {
     display: none;
+}
+
+.taxiRentPage{
+    .wrapper__left-block{
+        width: auto;
+    }
+
+    .selectionByParameters .carsGrid__list{
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .selectionByParameters__form .filter-form__container__select{
+        width: 415px;
+    }
+
+    .selectionByParameters__form .filter-form__container__input{
+        width: 208px;
+    }
+
+    .selectionByParameters__form .filter-form__buttons{
+        justify-content: flex-start;
+    }
+
+    .service__list-benefit{
+        max-height: 138px;
+        overflow: hidden;
+        transition: all .3s;
+    }
+}
+
+.rentPage{
+    .service__list-benefit{
+        max-height: 138px;
+        overflow: hidden;
+        transition: all .3s;
+    }
 }
 
 @media (max-width: 480px) {
