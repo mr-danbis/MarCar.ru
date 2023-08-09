@@ -19,7 +19,33 @@ window.addEventListener('DOMContentLoaded', () => {
         }
     };
     xhrFooter.send();
+
+    let sidebarContainer = document.getElementById('sidebar');
+    let xhrSidebar = new XMLHttpRequest();
+    xhrSidebar.open('GET', '/components/sidebar.html', true);
+    xhrSidebar.onreadystatechange = () => {
+        if (xhrSidebar.readyState === 4 && xhrSidebar.status === 200) {
+            sidebarContainer.innerHTML = xhrSidebar.responseText;
+        }
+    };
+    xhrSidebar.send();
+    
 });
+
+
+const sidebarFunctioning = () => {
+    const headerMobileBtn = document.querySelector('.header__mobile-burger-menu');
+    const sidebarCloseBtn = document.querySelector('.sidebar__close-btn');
+    const sidebar = document.querySelector('.sidebar');
+    headerMobileBtn.addEventListener('click', ()=> {
+        sidebar.style.display = 'block';
+    });
+    sidebarCloseBtn.addEventListener('click', ()=> {
+        sidebar.style.display = 'none';
+    });
+}
+
+
 
 const toggleDropdown = (dropdownId) => {
     let dropdown = document.getElementById("dropdown-" + dropdownId);
@@ -77,14 +103,6 @@ const videPlayer = (videoContainers, video) => {
     });
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-    videPlayer(".service__video-content", ".video");
-});
-
-document.addEventListener('DOMContentLoaded', () => {
-    videPlayer(".about-video-content", ".video");
-});
-
 const handleToggleText = (containerSelector, subtitleSelector, readMoreSelector, collapseSelector, maxHeight) => {
     const container = document.querySelector(containerSelector);
     const subtitle = container && container.querySelector(subtitleSelector);
@@ -109,18 +127,15 @@ const handleToggleText = (containerSelector, subtitleSelector, readMoreSelector,
     });
 }
 
+
+
 document.addEventListener('DOMContentLoaded', () => {
+    videPlayer(".service__video-content", ".video");
+    videPlayer(".about-video-content", ".video");
     handleToggleText('.seo-info__content', '.seo-info__subtitle', '#btn-read-more-seo', '#btn-collapse-seo', '208px');
-});
-
-document.addEventListener('DOMContentLoaded', () => {
     handleToggleText('.service__maintenance-collapse__container', '.service__maintenance-collapse__content', '#btn-read-more-service', '#btn-collapse-service', '290px');
-});
-
-document.addEventListener('DOMContentLoaded', () => {
     handleToggleText('.service__benefit-container', '.service__list-benefit', '#btn-read-more-service', '#btn-collapse-service', '138px');
-});
-
-document.addEventListener('DOMContentLoaded', () => {
     handleToggleText('.service__benefit-container-2', '.service__list-benefit-2', '#btn-read-more-service-2', '#btn-collapse-service-2', '138px');
+
+    sidebarFunctioning();
 });
