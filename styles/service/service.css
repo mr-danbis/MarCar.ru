@@ -319,6 +319,25 @@ p {
     margin-top: 15px;
   }
 }
+.btn-showMore {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  .btn-showMore {
+    display: block;
+    width: 100%;
+    color: var(--black, #232323);
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 14px;
+    border-radius: 4px;
+    background: var(--yellow, #FBE200);
+    padding: 23px 0;
+    margin-top: 15px;
+  }
+}
 .accordion__header {
   display: flex;
   cursor: pointer;
@@ -683,6 +702,25 @@ p {
   max-height: 138px;
   overflow: hidden;
   transition: all 0.3s;
+}
+
+@media (max-width: 480px) {
+  .btn-showMore {
+    display: block;
+    width: 100%;
+    color: var(--black, #232323);
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 14px;
+    border-radius: 4px;
+    background: var(--yellow, #FBE200);
+    padding: 23px 0;
+    margin-top: 15px;
+  }
+}
+.btn-showMore {
+  display: none;
 }
 
 @media (max-width: 480px) {
@@ -1270,6 +1308,76 @@ p {
 }
 .additional-nav__list__item:hover .additional-nav__list__item-content-svg path {
   fill: #ffffff;
+}
+
+.model {
+  margin-top: 50px;
+}
+.model-nav {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  margin-bottom: 27px;
+}
+.model-nav::-webkit-scrollbar {
+  display: none;
+}
+.model-nav__item {
+  flex-shrink: 0;
+  cursor: pointer;
+  font-size: 15px;
+  margin-right: 8px;
+  padding: 14px 30px;
+  border-radius: 4px;
+  background: #FAFAFA;
+  color: var(--sub-black-text, #575757);
+}
+.model-nav__item--active {
+  background: var(--main-blue, #248FEC);
+  color: #FFF;
+}
+.model-list {
+  gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.model-list__item {
+  gap: 10px;
+  display: flex;
+  border-radius: 4px;
+  background: #FBFBFB;
+  padding: 17px 15px 17px 20px;
+}
+.model-list__item-img {
+  width: 60px;
+  height: 36px;
+}
+.model-list__item-info {
+  width: 115px;
+}
+.model-list__item-info__title {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  color: var(--black, #232323);
+  margin: 0 0 4px;
+}
+.model-list__item-info__subtitle {
+  margin: 0;
+  font-size: 11px;
+  line-height: 12px;
+  color: var(--main-blue, #248FEC);
+}
+.model-list__item:hover {
+  cursor: pointer;
+  background: #FFF;
+  box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.06);
+}
+.model-list__item:hover .model-list__item-info__title {
+  color: var(--main-blue, #248FEC);
+}
+.model-list__item:hover .model-list__item-info__subtitle {
+  color: var(--sub-black-text, #575757);
 }
 
 .carsGrid__list {
