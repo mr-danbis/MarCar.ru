@@ -156,7 +156,9 @@
         margin-bottom: 5px;
     }
     &__promotions {
-        margin: 90px auto;
+        gap: 30px;
+        display: flex;
+        flex-direction: column;
     }
     &__new-products {
         border: 0;
@@ -345,31 +347,12 @@ h6.news__single__title {
     color: #FFF;
 }
 
-.stock-list {
-    gap: 5px;
-    display: flex;
-    &__item-blue, &__item-red {
-        padding: 8px 10px;
-        color: #FFF;
-        font-size: 13px;
-        font-weight: 400;
-        line-height: 13px;
-        border-radius: 2px;
-        background: var(--main-blue, #248FEC);
-        box-shadow: 0px 10px 35px 0px rgba(0, 0, 0, 0.18);
-    }
-    &__item-red {
-        background: #E20000;
-    }
-    &__item-orange {
-        background: #E5740B;
-    }
-}
-
 .pagination-list {
     gap: 30px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     &__item {
         width: 533px;
     }

@@ -1,0 +1,36 @@
+.promotion-card {
+  position: relative;
+}
+.promotion-card__img {
+  height: 370px;
+}
+.promotion-card__list {
+  gap: 5px;
+  display: flex;
+}
+.promotion-card__list__item-blue, .promotion-card__list__item-red, .promotion-card__list__item-orange {
+  color: #ffffff;
+  padding: 8px 10px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 13px;
+  border-radius: 2px;
+  background: #248FEC;
+  box-shadow: 0px 10px 35px 0px rgba(0, 0, 0, 0.18);
+}
+.promotion-card__list__item-red {
+  background: #E20000;
+}
+.promotion-card__list__item-orange {
+  background: #E5740B;
+}
+.promotion-card__top {
+  top: 20px;
+  left: 20px;
+  position: absolute;
+}
+.promotion-card__bottom {
+  left: 20px;
+  bottom: 25px;
+  position: absolute;
+}/*# sourceMappingURL=style.css.map */

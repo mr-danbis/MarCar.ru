@@ -1,0 +1,19 @@
+.new-product {
+  gap: 40px;
+  display: flex;
+  padding: 70px 0;
+  flex-direction: column;
+  border-bottom: 1px solid #ECECEC;
+  background: linear-gradient(180deg, var(--main-blue, #248FEC) 65%, transparent 35%);
+}
+.new-product-card {
+  position: relative;
+}
+.new-product-card__img {
+  height: 290px;
+}
+.new-product-card__bottom {
+  left: 20px;
+  bottom: 20px;
+  position: absolute;
+}/*# sourceMappingURL=style.css.map */

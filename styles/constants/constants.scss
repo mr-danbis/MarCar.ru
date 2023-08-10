@@ -96,6 +96,103 @@ p {
     margin: 0;
 }
 
+.wrapper {
+    width: 1660px;
+    margin: 0 auto;
+    &__container {
+        gap: 50px;
+        display: flex;
+    }
+    &__left-block {
+        width: 1100px;
+    }
+    &__right-block {
+        width: 510px;
+    }
+    &__top {
+        gap: 15px;
+        display: flex;
+        flex-direction: column;
+        &-block{
+            margin-bottom: 30px;
+        }
+    }
+    &__title-large, &__title-medium {
+        font-weight: 700;
+        color: $black;
+        span {
+            color: #248FEC;
+        }
+    }
+    &__title-large {
+        font-size: 50px;
+        line-height: 60px;
+        margin-bottom: 10px;
+    }
+    &__title-medium {
+        font-size: 35px;
+        line-height: 45px;
+    }
+    &__subtitle {
+        color: #000;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 28px;
+    }
+}
+
+.big-title {
+    color: $main-black;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 60px; /* 120% */
+}
+
+.block-title {
+    gap: 30px;
+    display: flex;
+    align-items: center;
+    &__text-light, &__text-dark {
+        color: $main-black;
+        font-size: 45px;
+        font-weight: 700;
+        line-height: 55px;
+    }
+    &__text-light {
+        color: $white; 
+    }
+    &__link-dark, &__link-light {
+        height: 14px;
+        color: $black;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 14px;
+        padding: 14px 24px;
+        border-radius: 4px;
+        background-color: $yellow;
+        transition: color 0.5s ease, background-color 0.5s ease;
+        &:hover {
+            color: $white;
+            background-color: $blue;
+        }
+    }
+    &__link-light {
+        color: $black;
+        transition: background-color 0.5s ease, box-shadow 0.5s ease;
+    }
+    &__link-light:hover {
+        color: $black;
+        background-color: #FFF27E;
+        box-shadow: 0px 4px 45px 0px rgba(78, 78, 78, 0.45);
+    }
+    // &-link-more {
+    //     display: none;
+    //     padding: 20px 0;
+    //     text-align: center;
+    // }
+}
+
+
 .logo {
     width: 165px;
     height: 34px;

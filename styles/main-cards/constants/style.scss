@@ -1,0 +1,123 @@
+@import "../../colors/colors.scss";
+
+.main-cards {
+    &__list {
+        gap: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &__item {
+            width: 535px;
+        }
+    }
+    &__img {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 4px;
+        pointer-events: none;
+    }
+    &__info {
+        gap: 5px;
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+    }
+    &__date, &__subtitle {
+        color: $yellow;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 18px;
+    }
+    &__title, &__subtitle {
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        text-overflow: ellipsis;
+        -webkit-box-orient: vertical;
+    }
+    &__title {
+        color: $white;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 30px;
+    }
+    &__subtitle {
+        color: $white;
+        line-height: 20px;
+    }
+}
+
+@media (max-width: 1700px) {
+    .main-cards__list {
+        flex-wrap: wrap;
+    }
+}
+
+@media (min-width: 1600px) and (max-width: 1700px) {
+    .main-cards__list {
+        width: 500px;
+    }
+}
+
+@media (min-width: 1500px) and (max-width: 1600px) {
+    .main-cards__list {
+        gap: 20px;
+        &__item {
+            width: 470px;
+        }
+    }
+}
+
+@media (min-width: 1100px) and (max-width: 1500px) {
+    .main-cards {
+        &__list {
+            gap: 20px;
+            &__item {
+                width: 400px;
+            }
+        }
+        &__info {
+            width: 300px;
+        }
+    }
+}
+
+@media (max-width: 1100px) {
+    .main-cards__list {
+        gap: 10px;
+    }
+}
+
+@media (min-width: 460px) and (max-width: 600px) {
+    .main-cards__list__item {
+        width: 450px;
+    }
+}
+
+@media (max-width: 459px) {
+    .main-cards {
+        &__info {
+            width: 305px;
+        }
+        &__title {
+            font-size: 16px;
+            line-height: 24px;
+        }
+        &__date, &__subtitle {
+            font-size: 12px;
+        }
+    }
+}
+
+@media (min-width: 375px) and (max-width: 459px) {
+    .main-cards__list__item {
+        width: 345px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 374px) {
+    .main-cards__list__item {
+        width: 320px;
+    }
+}
+
