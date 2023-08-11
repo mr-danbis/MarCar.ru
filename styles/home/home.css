@@ -131,11 +131,63 @@ p {
   line-height: 28px;
 }
 
+@media (min-width: 1500px) and (max-width: 1700px) {
+  .wrapper {
+    width: 1450px;
+  }
+}
+@media (min-width: 1301px) and (max-width: 1500px) {
+  .wrapper {
+    width: 1240px;
+  }
+}
+@media (min-width: 1095px) and (max-width: 1300px) {
+  .wrapper {
+    width: 1090px;
+  }
+}
+@media (max-width: 1094px) {
+  .wrapper {
+    width: 535px;
+  }
+  .wrapper__container {
+    gap: 40px;
+    flex-direction: column;
+  }
+  .wrapper__left-block, .wrapper__right-block {
+    width: 100%;
+  }
+}
+@media (min-width: 460px) and (max-width: 600px) {
+  .wrapper {
+    width: 450px;
+  }
+}
+@media (min-width: 375px) and (max-width: 459px) {
+  .wrapper {
+    width: 345px;
+  }
+}
+@media (min-width: 320px) and (max-width: 374px) {
+  .wrapper {
+    width: 320px;
+  }
+}
 .big-title {
   color: #232323;
   font-size: 50px;
   font-weight: 700;
-  line-height: 60px; /* 120% */
+  line-height: 60px;
+}
+.big-title span {
+  color: #248FEC;
+}
+
+.subtitle {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #232323;
 }
 
 .block-title {
@@ -176,7 +228,42 @@ p {
   background-color: #FFF27E;
   box-shadow: 0px 4px 45px 0px rgba(78, 78, 78, 0.45);
 }
+.block-title__link-more {
+  color: #000000;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 14px;
+  width: 345px;
+  display: none;
+  margin: 0 auto;
+  padding: 20px 0;
+  text-align: center;
+  border-radius: 4px;
+  background: #FBE200;
+  margin-bottom: 40px;
+}
 
+@media (max-width: 600px) {
+  .big-title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .block-title__text-light, .block-title__text-dark {
+    font-size: 26px;
+    line-height: 36px;
+  }
+  .block-title__link-dark, .block-title__link-light {
+    display: none;
+  }
+  .block-title__link-more {
+    display: block;
+  }
+}
+@media (max-width: 345px) {
+  .block-title__link-more {
+    width: 320px;
+  }
+}
 .logo {
   width: 165px;
   height: 34px;
@@ -185,17 +272,6 @@ p {
 .icon {
   width: 20px;
   height: 20px;
-}
-
-.video-container {
-  width: 100%;
-  height: 100%;
-}
-
-.video {
-  width: 1100px;
-  height: auto;
-  border-radius: 4px;
 }
 
 .number-list {
@@ -548,11 +624,63 @@ p {
   line-height: 28px;
 }
 
+@media (min-width: 1500px) and (max-width: 1700px) {
+  .wrapper {
+    width: 1450px;
+  }
+}
+@media (min-width: 1301px) and (max-width: 1500px) {
+  .wrapper {
+    width: 1240px;
+  }
+}
+@media (min-width: 1095px) and (max-width: 1300px) {
+  .wrapper {
+    width: 1090px;
+  }
+}
+@media (max-width: 1094px) {
+  .wrapper {
+    width: 535px;
+  }
+  .wrapper__container {
+    gap: 40px;
+    flex-direction: column;
+  }
+  .wrapper__left-block, .wrapper__right-block {
+    width: 100%;
+  }
+}
+@media (min-width: 460px) and (max-width: 600px) {
+  .wrapper {
+    width: 450px;
+  }
+}
+@media (min-width: 375px) and (max-width: 459px) {
+  .wrapper {
+    width: 345px;
+  }
+}
+@media (min-width: 320px) and (max-width: 374px) {
+  .wrapper {
+    width: 320px;
+  }
+}
 .big-title {
   color: #232323;
   font-size: 50px;
   font-weight: 700;
-  line-height: 60px; /* 120% */
+  line-height: 60px;
+}
+.big-title span {
+  color: #248FEC;
+}
+
+.subtitle {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #232323;
 }
 
 .block-title {
@@ -593,7 +721,42 @@ p {
   background-color: #FFF27E;
   box-shadow: 0px 4px 45px 0px rgba(78, 78, 78, 0.45);
 }
+.block-title__link-more {
+  color: #000000;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 14px;
+  width: 345px;
+  display: none;
+  margin: 0 auto;
+  padding: 20px 0;
+  text-align: center;
+  border-radius: 4px;
+  background: #FBE200;
+  margin-bottom: 40px;
+}
 
+@media (max-width: 600px) {
+  .big-title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .block-title__text-light, .block-title__text-dark {
+    font-size: 26px;
+    line-height: 36px;
+  }
+  .block-title__link-dark, .block-title__link-light {
+    display: none;
+  }
+  .block-title__link-more {
+    display: block;
+  }
+}
+@media (max-width: 345px) {
+  .block-title__link-more {
+    width: 320px;
+  }
+}
 .logo {
   width: 165px;
   height: 34px;
@@ -602,17 +765,6 @@ p {
 .icon {
   width: 20px;
   height: 20px;
-}
-
-.video-container {
-  width: 100%;
-  height: 100%;
-}
-
-.video {
-  width: 1100px;
-  height: auto;
-  border-radius: 4px;
 }
 
 .number-list {

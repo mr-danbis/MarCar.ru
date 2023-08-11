@@ -1,0 +1,16 @@
+@import "../header/header.scss";
+@import "../footer/footer.scss";
+@import "../colors/colors.scss";
+@import "../constants/constants.scss";
+@import "../additional-nav/style.scss";
+
+.contact {
+    &__first-block, &__second-black {
+        width: 550px;
+        display: flex;
+        flex-direction: column;
+    }
+    &__first-block {
+        gap: 5px;
+    }
+}

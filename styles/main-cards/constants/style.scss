@@ -59,7 +59,7 @@
     }
 }
 
-@media (min-width: 1500px) and (max-width: 1600px) {
+@media (min-width: 1501px) and (max-width: 1600px) {
     .main-cards__list {
         gap: 20px;
         &__item {
@@ -68,12 +68,21 @@
     }
 }
 
-@media (min-width: 1100px) and (max-width: 1500px) {
+@media (min-width: 1301px) and (max-width: 1500px) {
+    .main-cards__list {
+        gap: 20px;
+        &__item {
+            width: 400px;
+        }
+    }
+}
+
+@media (min-width: 1100px) and (max-width: 1300px) {
     .main-cards {
         &__list {
             gap: 20px;
             &__item {
-                width: 400px;
+                width: 350px;
             }
         }
         &__info {
