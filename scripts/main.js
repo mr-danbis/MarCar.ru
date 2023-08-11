@@ -78,11 +78,7 @@ const videPlayer = (videoContainers, video) => {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    videPlayer(".service__video-content", ".video");
-});
-
-document.addEventListener('DOMContentLoaded', () => {
-    videPlayer(".about-video-content", ".video");
+    videPlayer(".video__container", ".video");
 });
 
 const handleToggleText = (containerSelector, subtitleSelector, readMoreSelector, collapseSelector, maxHeight) => {

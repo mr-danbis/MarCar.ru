@@ -1,0 +1,39 @@
+.video {
+  width: 1100px;
+  height: auto;
+  border-radius: 4px;
+}
+.video__container {
+  width: 100%;
+  height: 100%;
+}
+.video__list {
+  gap: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.video__list__item {
+  width: 815px !important;
+}
+.video__content {
+  gap: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.video__description {
+  margin: 0 10px;
+}
+.video__date {
+  color: #575757;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  margin-bottom: 5px;
+}
+.video__title {
+  color: #141B2B;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 40px;
+}/*# sourceMappingURL=style.css.map */

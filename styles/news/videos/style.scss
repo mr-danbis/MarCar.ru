@@ -1,0 +1,29 @@
+@import "../../seo/style.scss";
+@import "../../videos/style.scss";
+@import "../../header/header.scss";
+@import "../../footer/footer.scss";
+@import "../../pagination/style.scss";
+@import "../../constants/constants.scss";
+@import "../../main-cards/constants/style.scss";
+@import "../../main-cards/promotion-card/style.scss";
+@import "../../main-cards/new-product-card/style.scss";
+
+.news-videos {
+    &__first-block, &__second-block, &__third-block {
+        display: flex;
+        flex-direction: column;
+    }
+    &__first-block {
+        gap: 30px;
+    }
+    &__second-block, &__third-block {
+        gap: 40px;
+    }
+    &__second-block {
+        margin-bottom: 90px;
+    }
+    &__third-block {
+        border: 0;
+        margin-bottom: 20px;
+    }
+}

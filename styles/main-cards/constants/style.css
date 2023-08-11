@@ -1,5 +1,5 @@
 .main-cards__list {
-  gap: 30px;
+  gap: 40px 30px;
   display: flex;
   justify-content: center;
   align-items: center;
