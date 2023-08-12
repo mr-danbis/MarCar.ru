@@ -43,12 +43,21 @@
   transition: color 0.5s ease;
 }
 .additional-nav__list__item:hover {
-  cursor: pointer;
   background: #248FEC;
 }
 .additional-nav__list__item:hover .additional-nav__list__item-content-text {
   color: #ffffff;
 }
 .additional-nav__list__item:hover .additional-nav__list__item-content-svg path {
+  fill: #ffffff;
+}
+
+.active {
+  background: #248FEC;
+}
+.active .additional-nav__list__item-content-text {
+  color: #ffffff;
+}
+.active .additional-nav__list__item-content-svg path {
   fill: #ffffff;
 }/*# sourceMappingURL=style.css.map */

@@ -42,7 +42,6 @@
                 }
             }
             &:hover {
-                cursor: pointer;
                 background: $blue;
                 & .additional-nav__list__item-content-text {
                     color: $white;
@@ -52,5 +51,15 @@
                 }
             }
         }
+    }
+}
+
+.active {
+    background: $blue;
+    & .additional-nav__list__item-content-text {
+        color: $white;
+    }
+    & .additional-nav__list__item-content-svg path {
+        fill: $white;
     }
 }

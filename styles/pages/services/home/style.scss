@@ -1,0 +1,52 @@
+@import "../../../seo/style.scss";
+@import "../../../header/header.scss";
+@import "../../../footer/footer.scss";
+@import "../../../colors/colors.scss";
+@import "../../../feeadback/style.scss";
+@import "../../../constants/constants.scss";
+@import "../../../main-cards/constants/style.scss";
+@import "../../../main-cards/promotion-card/style.scss";
+
+.services-home {
+    &__first-block, &__second-block, &__third-block {
+        display: flex;
+        flex-direction: column;
+    }
+    &__first-block {
+        gap: 50px;
+        margin-bottom: 80px;
+    }
+    &__second-block {
+        gap: 40px;
+        margin-bottom: 30px;
+    }
+    &__list {
+        gap: 12px;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 50px;
+        &__item {
+            width: 406px;
+            height: 290px;
+            &-content {
+                color: $white;
+                position: relative;
+                &__img {
+                    width: 100%;
+                    height: auto;
+                    border-radius: 4px;
+                    pointer-events: none;
+                    background: linear-gradient(180deg, rgba(36, 143, 236, 0.00) 0%, #248FEC 100%), lightgray 50% / cover no-repeat;
+                }
+                &__text {
+                    left: 20px;
+                    bottom: 25px;
+                    font-size: 20px;
+                    font-weight: 700;
+                    line-height: 28px;
+                    position: absolute;
+                }
+            }
+        }
+    }
+}
