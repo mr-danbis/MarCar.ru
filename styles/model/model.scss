@@ -1,0 +1,52 @@
+@import "../colors/colors.scss";
+
+.model {
+    &-card {
+        gap: 6px;
+        display: flex;
+        align-items: center;
+        &__icon {
+            width: 35px;
+            height: 29px;
+        }
+        &__title {
+            color: $main-black;
+            font-size: 13px;
+            font-weight: 500;
+            line-height: 18px;
+            margin-bottom: 2px;
+        }
+        &__subtitle {
+            color: $sub-black;
+            font-size: 10px;
+            font-weight: 400;
+            line-height: 10px;
+        }
+    }
+    &-list {
+        gap: 20px 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        &__item {
+            padding: 10px 14px;
+            width: 25%;
+            border-radius: 2px;
+            background: $white;
+        }
+    }
+}
+
+@media (max-width: 1094px) { 
+    .model {
+        &-list {
+            gap: 9px 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            &__item {
+                width: 40%;
+            }
+        }
+    }
+}

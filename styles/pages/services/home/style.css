@@ -730,10 +730,10 @@ p {
   display: flex;
 }
 .wrapper__left-block {
-  width: 1100px;
+  width: 65%;
 }
 .wrapper__right-block {
-  width: 510px;
+  width: 30%;
 }
 .wrapper__top {
   gap: 15px;
@@ -1145,7 +1145,7 @@ p {
   background-size: 1.25rem;
   background-repeat: no-repeat;
   transition: transform 0.2s ease-out;
-  background-image: url(../../images/service/arrow.svg);
+  background-image: url(../../images/icons/components/accordion-arrow.svg);
 }
 .accordion__header:hover::after {
   filter: brightness(0) invert(1);
@@ -1417,7 +1417,7 @@ p {
   padding: 61px 119px 60px 70px;
   background-image: url(../../images/feedback-fon.svg);
   background-repeat: no-repeat;
-  background-color: #000;
+  background-color: #000000;
   background-size: cover;
 }
 .feedback__left-block-title {
@@ -1486,7 +1486,7 @@ p {
   line-height: normal;
 }
 .feedback__right-block-checkbox label a {
-  color: #44A8FF;
+  color: #248FEC;
 }
 
 @font-face {
@@ -1585,10 +1585,10 @@ p {
   display: flex;
 }
 .wrapper__left-block {
-  width: 1100px;
+  width: 65%;
 }
 .wrapper__right-block {
-  width: 510px;
+  width: 30%;
 }
 .wrapper__top {
   gap: 15px;
@@ -2149,7 +2149,6 @@ p {
   gap: 12px;
   display: flex;
   flex-wrap: wrap;
-  margin-top: 50px;
 }
 .services-home__list__item {
   width: 406px;

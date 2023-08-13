@@ -1,0 +1,26 @@
+.list-benefit {
+  gap: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.list-benefit__item {
+  gap: 8px;
+  display: flex;
+}
+.list-benefit__item-img {
+  margin-top: 3px;
+  width: 18px;
+  height: 18px;
+}
+.list-benefit__item-text {
+  color: #232323;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+@media (max-width: 1094px) {
+  .list-benefit {
+    gap: 10px;
+  }
+}/*# sourceMappingURL=list-benefit.css.map */

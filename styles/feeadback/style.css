@@ -12,7 +12,7 @@
   padding: 61px 119px 60px 70px;
   background-image: url(../../images/feedback-fon.svg);
   background-repeat: no-repeat;
-  background-color: #000;
+  background-color: #000000;
   background-size: cover;
 }
 .feedback__left-block-title {
@@ -81,5 +81,5 @@
   line-height: normal;
 }
 .feedback__right-block-checkbox label a {
-  color: #44A8FF;
+  color: #248FEC;
 }/*# sourceMappingURL=style.css.map */

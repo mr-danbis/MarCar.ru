@@ -13,7 +13,7 @@
         padding: 61px 119px 60px 70px;
         background-image: url(../../images/feedback-fon.svg);
         background-repeat: no-repeat;
-        background-color: #000;
+        background-color: $black;
         background-size: cover;
         &-title {
             font-size: 30px;
@@ -80,7 +80,7 @@
                 font-weight: 400;
                 line-height: normal;
                 a {
-                    color: #44A8FF;
+                    color: $main-blue;
                 }
             }
         }
