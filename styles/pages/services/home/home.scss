@@ -1,0 +1,67 @@
+@import "../../../common/colors/colors.scss";
+@import "../../../common/constants/constants.scss";
+@import "../../../common/main-components/feedback/feedback.scss";
+@import "../../../common/main-components/seo-block/seo-block.scss";
+@import "../../../common/main-components/promotion/promotion.scss";
+
+.services {
+    &__list {
+        gap: 12px;
+        display: flex;
+        flex-wrap: wrap;
+        &__item {
+            width: 24%;
+            &-content {
+                color: $white;
+                position: relative;
+                &__img {
+                    width: 100%;
+                    height: auto;
+                    border-radius: 4px;
+                    pointer-events: none;
+                    background: linear-gradient(180deg, rgba(36, 143, 236, 0.00) 0%, #248FEC 100%), lightgray 50% / cover no-repeat;
+                }
+                &__text {
+                    left: 20px;
+                    bottom: 25px;
+                    font-size: 20px;
+                    font-weight: 700;
+                    line-height: 28px;
+                    position: absolute;
+                }
+            }
+        }
+    }
+    &__first-block {
+        gap: 50px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 80px;
+    }
+    &__last-block {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 900px) {
+    .services {
+        &__list {
+            gap: 15px;
+            display: flex;
+            flex-wrap: wrap;
+            &__item {
+                width: 100%;
+                &-content__text {
+                    bottom: 20px;
+                }
+            }
+        }
+        &__first-block {
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+        &__last-block {
+            margin-top: 40px;
+        }
+    }
+}

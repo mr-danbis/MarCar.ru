@@ -1,12 +1,14 @@
-@import "../../../colors/colors.scss";
+@import "../../../common/colors/colors.scss";
 
 .service-const {
     &__img {
         width: 100%;
-        object-fit: cover;
         height: 300px;
+        object-fit: cover;
+        border-radius: 8px;
         margin-bottom: 30px;
     }
+
     &__title {
         color: $main-black;
         font-size: 35px;
@@ -16,6 +18,7 @@
             color: $main-blue;
         }
     }
+
     &__callback {
         color: $white;
         padding: 30px 47px;
@@ -33,10 +36,10 @@
             margin-bottom: 20px;
         }
         &__btn {
-            width: 100%;
-            padding: 19px 0;
             gap: 10px;
+            width: 100%;
             display: flex;
+            padding: 19px 0;
             align-items: center;
             justify-content: center;
             border-radius: 4px;
@@ -55,13 +58,20 @@
                 font-size: 15px;
                 font-weight: 600;
                 line-height: 24px;
+                white-space: nowrap;
             }
         }
     }
+
+    &__callback-wrapper {
+        margin-bottom: 40px;
+    }
+
     &__benefit-container {
         gap: 50px;
         display: flex;
     }
+
     &__form {
         color: $white;
         padding: 40px;
@@ -88,7 +98,7 @@
         }
         &__select, 
         &__input {
-            width: 457px;
+            width: 44.7%;
             color: #969696;
             font-size: 14px;
             font-weight: 400;
@@ -98,7 +108,7 @@
             border: 1px solid #DFDFDF;
         }
         &__select {
-           width: 500px;
+           width: 49%;
         }
         &__btn {
             width: 25%;
@@ -114,6 +124,23 @@
                 background-color: #FFF27E;
                 box-shadow: 0px 4px 45px 0px rgba(78, 78, 78, 0.45);
             } 
+        }
+        &__btn-more {
+            gap: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            color: $white;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px;
+            
+            width: 274px;
+            padding: 15px 0;
+            margin: 5px 0 25px;
+            background: transparent;
+            border: 1px solid #FFF;
         }
         &__checkbox {
             width: 55%;
@@ -134,7 +161,7 @@
     }
 }
 
-@media (max-width: 1094px) {
+@media (max-width: 1100px) {
     .service-const {
         &__img {
             margin-bottom: 20px;
@@ -174,6 +201,12 @@
             &__btn {
                 width: 50%;
                 margin: 0 auto;
+            }
+            &__btn-more {
+                width: 100%;
+            }
+            &__input, &__select {
+                width: 100%;
             }
         }
     }

@@ -1,0 +1,28 @@
+@import "../../colors/colors.scss";
+
+.button {
+    &-yeelow, &-blue {
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 24px;
+        border-radius: 4px;
+    }
+    &-yellow {
+        color: $main-black;
+        background-color: $main-yellow;
+        transition: color 0.5s ease, background-color 0.5s ease;
+        &:hover {
+            color: $white;
+            background-color: $main-blue;
+        }
+    }
+    &-blue {
+        color: $white;
+        background-color: $main-blue;
+        transition: color 0.5s ease, background-color 0.5s ease;
+        &:hover {
+            color: $main-black;
+            background-color: $main-yellow;
+        }
+    }
+}

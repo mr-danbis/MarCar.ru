@@ -1,0 +1,24 @@
+.button-yeelow, .button-blue {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 24px;
+  border-radius: 4px;
+}
+.button-yellow {
+  color: #232323;
+  background-color: #FBE200;
+  transition: color 0.5s ease, background-color 0.5s ease;
+}
+.button-yellow:hover {
+  color: #ffffff;
+  background-color: #248FEC;
+}
+.button-blue {
+  color: #ffffff;
+  background-color: #248FEC;
+  transition: color 0.5s ease, background-color 0.5s ease;
+}
+.button-blue:hover {
+  color: #232323;
+  background-color: #FBE200;
+}/*# sourceMappingURL=button.css.map */

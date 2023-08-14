@@ -1,11 +1,10 @@
-@import "../../../seo/style.scss";
-@import "../../../footer/footer.scss";
-@import "../../../header/header.scss";
 @import "../constants/service-const.scss";
-@import "../../../constants/constants.scss";
-@import "../../../accordion/accordion.scss";
-@import "../../../additional-nav/style.scss";
-@import "../../../list-benefit/list-benefit.scss";
+@import "../../../common/colors/colors.scss";
+@import "../../../common/constants/constants.scss";
+@import "../../../common/main-components/benefit/benefit.scss";
+@import "../../../common/main-components/accordion/accordion.scss";
+@import "../../../common/main-components/seo-block/seo-block.scss";
+@import "../../../common/main-components/additional-nav/additional-nav.scss";
 
 .services-technical {
     &__first-block, &__second-block, &__third-block {
@@ -32,7 +31,7 @@
     }
 }
 
-@media (max-width: 1094px) { 
+@media (max-width: 1100px) { 
     .services-technical {
         &__first-block {
             margin-bottom: 40px;

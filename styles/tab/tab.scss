@@ -1,0 +1,24 @@
+@import "../colors/colors.scss";
+
+.tab {
+    &-list {
+        gap: 8px;
+        display: flex;
+    }
+    &-btn {
+        padding: 14px 30px;
+
+        color: $sub-black;
+        font-size: 15px;
+        font-weight: 600;
+        line-height: normal;
+
+        border-radius: 4px;
+        background: #FAFAFA;
+    }
+}
+
+.selected {
+    color: $white;
+    background: $main-blue;
+}

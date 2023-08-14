@@ -1,0 +1,124 @@
+.button-yeelow, .button-blue {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 24px;
+  border-radius: 4px;
+}
+.button-yellow {
+  color: #232323;
+  background-color: #FBE200;
+  transition: color 0.5s ease, background-color 0.5s ease;
+}
+.button-yellow:hover {
+  color: #ffffff;
+  background-color: #248FEC;
+}
+.button-blue {
+  color: #ffffff;
+  background-color: #248FEC;
+  transition: color 0.5s ease, background-color 0.5s ease;
+}
+.button-blue:hover {
+  color: #232323;
+  background-color: #FBE200;
+}
+
+.feedback {
+  display: flex;
+  border-radius: 4px;
+  margin-top: 30px !important;
+}
+.feedback__left {
+  width: 33%;
+  color: #ffffff;
+  position: relative;
+}
+.feedback__left-content {
+  top: 32%;
+  left: 11%;
+  position: absolute;
+}
+.feedback__left-img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.feedback__left-title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 40px;
+  margin-bottom: 5px;
+}
+.feedback__left-title span {
+  color: #248FEC;
+}
+.feedback__left-subtitle {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.feedback__right {
+  padding: 63px 25px 43px 70px;
+  width: 67%;
+  background: #000000;
+}
+.feedback__right-form {
+  gap: 10px;
+  display: flex;
+}
+.feedback__right-form__input {
+  width: 30%;
+  color: #ffffff;
+  padding: 15px 25px;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+.feedback__right-form__input::placeholder {
+  color: #ffffff;
+}
+.feedback__right-form__button {
+  width: 18%;
+  padding: 15px 0;
+}
+@media (max-width: 1300px) {
+  .feedback__left-title {
+    font-size: 24px;
+    line-height: 34px;
+  }
+  .feedback__left-subtitle {
+    font-size: 14px;
+  }
+}
+@media (max-width: 1094px) {
+  .feedback {
+    margin-top: 40px !important;
+    flex-direction: column;
+  }
+  .feedback__left {
+    width: 100%;
+  }
+  .feedback__left-img {
+    height: 142px;
+  }
+  .feedback__left-content {
+    top: 25%;
+    left: 7%;
+  }
+  .feedback__right {
+    width: 100%;
+    padding: 0;
+  }
+  .feedback__right-form {
+    overflow: hidden;
+    padding: 25px 25px 35px 25px;
+    flex-direction: column;
+  }
+  .feedback__right-form__input {
+    width: 94%;
+  }
+  .feedback__right-form__button {
+    width: 100%;
+    padding: 20px 0;
+    font-size: 14px;
+    line-height: 14px;
+  }
+}/*# sourceMappingURL=feedback.css.map */

@@ -1,7 +1,8 @@
 .service-const__img {
   width: 100%;
-  object-fit: cover;
   height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
   margin-bottom: 30px;
 }
 .service-const__title {
@@ -31,14 +32,14 @@
   margin-bottom: 20px;
 }
 .service-const__callback__btn {
-  width: 100%;
-  padding: 19px 0;
   gap: 10px;
+  width: 100%;
   display: flex;
+  padding: 19px 0;
   align-items: center;
   justify-content: center;
   border-radius: 4px;
-  background-color: #FBE200;
+  background-color: #FFF27E;
   transition: background-color 0.5s ease, box-shadow 0.5s ease;
 }
 .service-const__callback__btn:hover {
@@ -54,6 +55,10 @@
   font-size: 15px;
   font-weight: 600;
   line-height: 24px;
+  white-space: nowrap;
+}
+.service-const__callback-wrapper {
+  margin-bottom: 40px;
 }
 .service-const__benefit-container {
   gap: 50px;
@@ -85,7 +90,7 @@
   margin-bottom: 20px;
 }
 .service-const__form__select, .service-const__form__input {
-  width: 457px;
+  width: 44.7%;
   color: #969696;
   font-size: 14px;
   font-weight: 400;
@@ -95,7 +100,7 @@
   border: 1px solid #DFDFDF;
 }
 .service-const__form__select {
-  width: 500px;
+  width: 49%;
 }
 .service-const__form__btn {
   width: 25%;
@@ -105,12 +110,27 @@
   font-weight: 600;
   line-height: 24px;
   border-radius: 4px;
-  background-color: #FBE200;
+  background-color: #FFF27E;
   transition: background-color 0.5s ease, box-shadow 0.5s ease;
 }
 .service-const__form__btn:hover {
   background-color: #FFF27E;
   box-shadow: 0px 4px 45px 0px rgba(78, 78, 78, 0.45);
+}
+.service-const__form__btn-more {
+  gap: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  width: 274px;
+  padding: 15px 0;
+  margin: 5px 0 25px;
+  background: transparent;
+  border: 1px solid #FFF;
 }
 .service-const__form__checkbox {
   width: 55%;
@@ -129,7 +149,7 @@
   justify-content: space-between;
 }
 
-@media (max-width: 1094px) {
+@media (max-width: 1100px) {
   .service-const__img {
     margin-bottom: 20px;
   }
@@ -169,5 +189,11 @@
   .service-const__form__btn {
     width: 50%;
     margin: 0 auto;
+  }
+  .service-const__form__btn-more {
+    width: 100%;
+  }
+  .service-const__form__input, .service-const__form__select {
+    width: 100%;
   }
 }/*# sourceMappingURL=service-const.css.map */

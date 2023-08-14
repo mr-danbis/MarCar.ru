@@ -81,6 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
     videPlayer(".video__container", ".video");
 });
 
+//
 const handleToggleText = (containerSelector, subtitleSelector, readMoreSelector, collapseSelector, maxHeight) => {
     const container = document.querySelector(containerSelector);
     const subtitle = container && container.querySelector(subtitleSelector);
@@ -105,9 +106,11 @@ const handleToggleText = (containerSelector, subtitleSelector, readMoreSelector,
     });
 }
 
+//seo-block 
 document.addEventListener('DOMContentLoaded', () => {
-    handleToggleText('.seo-info__content', '.seo-info__subtitle', '#btn-read-more-seo', '#btn-collapse-seo', '208px');
+    handleToggleText('.seo-block__content', '.seo-block__subtitle', '#btn-read-more-seo', '#btn-collapse-seo', '208px');
 });
+
 
 document.addEventListener('DOMContentLoaded', () => {
     handleToggleText('.service__maintenance-collapse__container', '.service__maintenance-collapse__content', '#btn-read-more-service', '#btn-collapse-service', '290px');

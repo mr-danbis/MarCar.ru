@@ -1,17 +1,19 @@
-@import "../../../seo/style.scss";
-@import "../../../colors/colors.scss";
-@import "../../../header/header.scss";
-@import "../../../footer/footer.scss";
 @import "../constants/service-const.scss";
-@import "../../../additional-nav/style.scss";
-@import "../../../constants/constants.scss";
-@import "../../../accordion/accordion.scss";
-@import "../../../list-benefit/list-benefit.scss";
-@import "../../../main-cards/constants/style.scss";
-@import "../../../main-cards/promotion-card/style.scss";
+@import "../../../common/colors/colors.scss";
+@import "../../../common/constants/constants.scss";
+@import "../../../common/main-components/benefit/benefit.scss";
+@import "../../../common/main-components/seo-block/seo-block.scss";
+@import "../../../common/main-components/promotion/promotion.scss";
+@import "../../../common/main-components/accordion/accordion.scss";
+@import "../../../common/main-components/number-list/number-list.scss";
+@import "../../../common/main-components/additional-nav/additional-nav.scss";
+@import "../../../common/main-components/cards-constants/cards-constants.scss";
 
 .services-credit {
-    &__first-block, &__third-block, &__fourth-block, &__fifth-block, &__promotion {
+    &__first-block,
+    &__third-block,
+    &__fourth-block,
+    &__fifth-block {
         display: flex;
         flex-direction: column;
     }
@@ -30,10 +32,11 @@
     }
     &__fifth-block {
         gap: 8px;
+        margin-top: 30px;
     }
     &__promotion {
         gap: 40px;
-        margin: 70px 0 90px;
+        margin: 70px auto 90px;
     }
     &__callback {
         margin-bottom: 40px;
@@ -77,8 +80,27 @@
     }
 }
 
-@media (max-width: 1094px) {
+@media (max-width: 1100px) {
     .services-credit {
+        &__second-block {
+            margin: 15px 0 43px;
+        }
+        &__third-block {
+            margin-bottom: 40px;
+        }
+        &__fourth-block {
+            gap: 5px;
+            margin-top: 30px;
+        }
+        &__fifth-block {
+            gap: 15px;
+        }
+        &__promotion {
+            margin: 40px auto 0;
+        }
+        &__callback {
+            margin-bottom: 40px;
+        }
         &__list {
             gap: 8px;
             &__item {

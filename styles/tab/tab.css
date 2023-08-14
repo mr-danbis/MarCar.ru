@@ -1,0 +1,18 @@
+.tab-list {
+  gap: 8px;
+  display: flex;
+}
+.tab-btn {
+  padding: 14px 30px;
+  color: #575757;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: normal;
+  border-radius: 4px;
+  background: #FAFAFA;
+}
+
+.selected {
+  color: #ffffff;
+  background: #248FEC;
+}/*# sourceMappingURL=tab.css.map */

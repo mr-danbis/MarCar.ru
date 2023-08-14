@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+button {
+  border: 0;
+  cursor: pointer;
+}
+
+input {
+  padding: 0;
+  border: 0;
+}
+
+.wrapper {
+  width: 87%;
+  margin: 0 auto;
+}
+.wrapper__container {
+  display: flex;
+  justify-content: space-between;
+}
+.wrapper__left {
+  width: 67%;
+}
+.wrapper__right {
+  width: 30%;
+}
+
+.block-title {
+  gap: 30px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.block-title__text-white, .block-title__text-black {
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 55px;
+}
+.block-title__text-white {
+  color: #ffffff;
+}
+.block-title__text-black {
+  color: #232323;
+}
+.block-title__link-light, .block-title__link-dark, .block-title__link-more {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 14px;
+  text-align: center;
+  background-color: #FBE200;
+  transition: color 0.5s ease, background-color 0.5s ease;
+}
+.block-title__link-light, .block-title__link-dark {
+  width: 138px;
+  padding: 14px 0;
+  color: #232323;
+}
+.block-title__link-more {
+  width: 100%;
+  display: none;
+  padding: 20px 0;
+  margin-top: 20px;
+}
+.block-title__link-more:hover, .block-title__link-dark:hover {
+  color: #ffffff;
+  background-color: #248FEC;
+}
+.block-title__link-light {
+  transition: background-color 0.5s ease, box-shadow 0.5s ease;
+}
+.block-title__link-light:hover {
+  background-color: #FFF27E;
+  box-shadow: 0px 4px 45px 0px rgba(78, 78, 78, 0.45);
+}
+
+.big-title {
+  color: #232323;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 60px;
+}
+.big-title span {
+  color: #248FEC;
+}
+
+.subtitle {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #232323;
+}
+
+@media (min-width: 1100px) and (max-width: 1300px) {
+  .wrapper__left {
+    width: 57%;
+  }
+  .wrapper__right {
+    width: 40%;
+  }
+}
+@media (max-width: 1100px) {
+  .wrapper__container {
+    gap: 40px;
+    flex-direction: column;
+  }
+  .wrapper__left, .wrapper__right {
+    width: 100%;
+  }
+  .big-title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .block-title {
+    margin-bottom: 25px;
+  }
+  .block-title__text-white, .block-title__text-black {
+    font-size: 26px;
+    line-height: 36px;
+  }
+  .block-title__link-dark, .block-title__link-light {
+    display: none;
+  }
+  .block-title__link-more {
+    display: block;
+  }
+}
+.account {
+  padding: 102px 0;
+  background: var(--gradient, linear-gradient(48deg, #2775B8 0%, #44A8FF 100%)) left/50% 100% no-repeat, #FFFFFF right/50% 100% no-repeat;
+}
+
+.sms__wrapper {
+  padding: 204px 0;
+  position: relative;
+  height: 100%;
+}
+.sms__container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+}
+.sms__link-back {
+  gap: 5px;
+  width: 151px;
+  display: flex;
+  align-items: center;
+  padding: 12px 22px 12px 10px;
+  border-radius: 999px;
+  border: 1px solid #FFF;
+  position: absolute;
+  right: 517px;
+}
+.sms__link-back img {
+  width: 30px;
+  height: 30px;
+}
+.sms__link-back span {
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
+.sms__form {
+  padding: 0 50px 30px;
+  width: 230px;
+  display: flex;
+  border-radius: 8px;
+  background: #FFF;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 0px 4px 140px 0px rgba(0, 0, 0, 0.08);
+}
+.sms__form img {
+  margin-top: -50px;
+}
+.sms__form__text {
+  color: var(--sub-black-text, #575757);
+  text-align: center;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  margin: 10px 0;
+}
+.sms__form__input-container {
+  gap: 10px;
+  display: flex;
+}
+.sms__form__input {
+  width: 30px;
+  padding: 15px 10px;
+  border-radius: 4px;
+  border: 1px solid #EDEDED;
+  background: #FAFAFA;
+}
+.sms__form__btn {
+  margin-top: 25px;
+  color: #000;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  padding: 0 0 5px;
+  background: transparent;
+  border-bottom: 1px solid #248FEC;
+}
+
+@media (max-width: 1100px) {
+  .sms {
+    background: var(--gradient, linear-gradient(48deg, #2775B8 0%, #44A8FF 100%)) top/100% 50% no-repeat, #FFFFFF bottom/50% 100% no-repeat;
+  }
+  .sms__link-back {
+    position: static;
+  }
+  .sms__container {
+    flex-direction: column;
+    gap: 100px;
+  }
+}/*# sourceMappingURL=sms.css.map */

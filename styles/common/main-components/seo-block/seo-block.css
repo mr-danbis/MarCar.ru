@@ -1,0 +1,40 @@
+.seo-block {
+  padding: 70px 0;
+  background: #FBFBFB;
+}
+.seo-block__container {
+  max-width: 72%;
+}
+.seo-block__title {
+  color: #1E4D79;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 34px;
+  margin-bottom: 10px;
+}
+.seo-block__subtitle {
+  color: #232323;
+  max-height: 205px;
+  overflow: hidden;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 26px;
+  transition: max-height 0.5s ease;
+}
+
+@media (max-width: 1100px) {
+  .seo-block {
+    padding: 40px 0;
+  }
+  .seo-block__container {
+    max-width: 100%;
+  }
+  .seo-block__title {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .seo-block__subtitle {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}/*# sourceMappingURL=seo-block.css.map */
