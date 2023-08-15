@@ -5,20 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="shortcut icon" href="/images/logoBlue.svg">
-    <link rel="stylesheet" href="/styles/news/videos/style.css">
-    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.8/plyr.css" />
-    
-    <script src="https://cdn.plyr.io/3.6.8/plyr.js"></script>
+    <link rel="stylesheet" href="/styles/pages/news/videos/videos.css">
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <title>MARCAR</title>
 </head>
 <body>
-    <div id="header"></div>
+    <!-- <div id="header"></div> -->
 
     <main>
-        <section class="news-videos__first-block">
-            <h1 class="big-title wrapper">Видеообзоры</h1>
+        <section class="news-videos__first-block wrapper">
+            <h1 class="big-title">Видеообзоры</h1>
             <ul class="pagination-list video__list" data-limit="8">
                 <li class="pagination-list__item video__list__item">
                     <div class="video__content">
@@ -1463,15 +1461,15 @@
             </ul>
             <div class="pagination"></div>
         </section>
-    
-        <section class="news-videos__second-block">
-            <div class="block-title wrapper">
-                <h1 class="block-title__text-dark">Акции и спецпредложения</h1>
+
+        <section class="news-videos__second-block wrapper">
+            <div class="block-title">
+                <h1 class="block-title__text-black">Акции и спецпредложения</h1>
                 <a href="/pages/newsPages/newsPromotionsPage.html" class="block-title__link-dark">Подробнее</a>
             </div>
             <ul class="main-cards__list">
                 <li class="main-cards__list__item">
-                    <a href="/pages/newsPages/newsStocksSinglePage.html">
+                    <a href="/pages/newsPages/newsPromotionPage.html">
                         <div class="promotion-card">
                             <div class="promotion-card__top">
                                 <ul class="promotion-card__list">
@@ -1497,7 +1495,7 @@
                     </a>
                 </li>
                 <li class="main-cards__list__item">
-                    <a href="/pages/newsPages/newsStocksSinglePage.html">
+                    <a href="/pages/newsPages/newsPromotionPage.html">
                         <div class="promotion-card">
                             <div class="promotion-card__top">
                                 <ul class="promotion-card__list">
@@ -1516,7 +1514,7 @@
                     </a>
                 </li>
                 <li class="main-cards__list__item">
-                    <a href="/pages/newsPages/newsStocksSinglePage.html">
+                    <a href="/pages/newsPages/newsPromotionPage.html">
                         <div class="promotion-card">
                             <div class="promotion-card__top">
                                 <ul class="promotion-card__list">
@@ -1535,32 +1533,22 @@
                     </a>
                 </li>
             </ul>
+            <a href="/pages/newsPages/newsNewProductsPage.html" class="block-title__link-more">
+                Показать больше
+            </a>
         </section>
 
         <section class="new-product news-videos__third-block">
-            <div class="block-title wrapper">
-                <h1 class="block-title__text-light">Наши новинки</h1>
-                <a class="block-title__link-light" href="/pages/newsPages/newsNewProductPage.html">Подробнее</a>
-            </div>
-            <ul class="main-cards__list">
-                <li class="main-cards__list__item">
-                    <a href="/pages/newsPages/newsNewProductSinglePage.html">
-                        <div class="new-product-card">
-                            <img src="/images/auto/auto1.png" alt="" class="main-cards__img new-product-card__img">
-                            <div class="new-product-card__bottom">
-                                <div class="main-cards__info">
-                                    <h6 class="main-cards__date">18.09.2023</h6>
-                                    <h1 class="main-cards__title">Новый полноразмерный внедорожник TANK 500</h1>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <li class="main-cards__list__item">
-                    <a href="/pages/newsPages/newsNewProductSinglePage.html">
-                        <div class="new-product-card">
-                            <img src="/images/auto/auto2.png" alt="" class="main-cards__img  new-product-card__img">
-                            <div class="new-product-card__info">
+            <div class="wrapper">
+                <div class="block-title">
+                    <h1 class="block-title__text-white">Наши новинки</h1>
+                    <a class="block-title__link-light" href="/pages/newsPages/newsNewProductsPage.html">Подробнее</a>
+                </div>
+                <ul class="main-cards__list">
+                    <li class="main-cards__list__item">
+                        <a href="/pages/newsPages/newsNewProductPage.html">
+                            <div class="new-product-card">
+                                <img src="/images/auto/auto1.png" alt="" class="main-cards__img new-product-card__img">
                                 <div class="new-product-card__bottom">
                                     <div class="main-cards__info">
                                         <h6 class="main-cards__date">18.09.2023</h6>
@@ -1568,31 +1556,49 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </a>
-                </li>
-                <li class="main-cards__list__item">
-                    <a href="/pages/newsPages/newsNewProductSinglePage.html">
-                        <div class="new-product-card">
-                            <img src="/images/auto/auto3.png" alt="" class="main-cards__img new-product-card__img">
-                            <div class="new-product-card__bottom">
-                                <div class="main-cards__info">
-                                    <h6 class="main-cards__date">18.09.2023</h6>
-                                    <h1 class="main-cards__title">Старт официальных продаж Changan UNI-V. Старт официальных продаж Changan UNI-V</h1>
+                        </a>
+                    </li>
+                    <li class="main-cards__list__item">
+                        <a href="/pages/newsPages/newsNewProductPage.html">
+                            <div class="new-product-card">
+                                <img src="/images/auto/auto2.png" alt="" class="main-cards__img  new-product-card__img">
+                                <div class="new-product-card__info">
+                                    <div class="new-product-card__bottom">
+                                        <div class="main-cards__info">
+                                            <h6 class="main-cards__date">18.09.2023</h6>
+                                            <h1 class="main-cards__title">Новый полноразмерный внедорожник TANK 500</h1>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </a>
-                </li>
-            </ul>
+                        </a>
+                    </li>
+                    <li class="main-cards__list__item">
+                        <a href="/pages/newsPages/newsNewProductPage.html">
+                            <div class="new-product-card">
+                                <img src="/images/auto/auto3.png" alt="" class="main-cards__img new-product-card__img">
+                                <div class="new-product-card__bottom">
+                                    <div class="main-cards__info">
+                                        <h6 class="main-cards__date">18.09.2023</h6>
+                                        <h1 class="main-cards__title">Старт официальных продаж Changan UNI-V. Старт официальных продаж Changan UNI-V</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <a href="/pages/newsPages/newsNewProductsPage.html" class="block-title__link-more">
+                    Показать больше
+                </a>
+            </div>
         </section>
 
-        <section class="seo-info news-videos__fourth-block">
+        <section class="seo-block news-videos__fourth-block">
             <div class="wrapper">
-                <div class="seo-info__container">
-                    <p class="seo-info__title">Каталог автомобилей (для Seo)</p>
-                    <div class="seo-info__content">
-                        <p class="seo-info__subtitle">
+                <div class="seo-block__container">
+                    <p class="seo-block__title">Каталог автомобилей (для Seo)</p>
+                    <div class="seo-block__content">
+                        <p class="seo-block__subtitle">
                             Универсальная платформа Субару-Тойота, задний привод и 200 сил. 
                             Планировалось, очевидно, что-то типа возрождения "Селики" по 
                             концепции и мощности (та, правда, была переднеприводной). 
@@ -1635,10 +1641,10 @@
         </section>
     </main>
     
-    <div id="footer"></div>
+    <!-- <div id="footer"></div> -->
 
     <script src="/scripts/main.js"></script>
     <script src="/scripts/pagination.js"></script>
-
+    <script src="https://cdn.plyr.io/3.6.8/plyr.js"></script>
 </body>
 </html>

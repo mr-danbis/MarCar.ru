@@ -1,0 +1,150 @@
+@import "../../../common/colors/colors.scss";
+@import "../../../common/constants/constants.scss";
+@import "../../../common/main-components/model/model.scss";
+@import "../../../common/main-components/dealer/dealer.scss";
+@import "../../../common/main-components/services/services.scss";
+@import "../../../common/main-components/seo-block/seo-block.scss";
+@import "../../../common/main-components/slider-gallery/slider-gallery.scss";
+
+.dealers-single {
+    &__img {
+        width: 59%;
+        height: 100%;
+        object-fit: cover;
+    }
+    &__map {
+        width: 41%;
+        height: auto;
+    }
+    &__first-block {
+        gap: 5px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+    &__second-block {
+        display: flex;
+        height: 605px;
+        margin-bottom: 50px;
+    }
+    &__third-block {
+        gap: 112px;
+        display: flex;
+        margin: 50px auto;
+        &-title {
+            color: $black;
+            font-size: 35px;
+            font-weight: 700;
+            line-height: 45px;
+            white-space: nowrap;
+        }
+        &-info {
+            gap: 25px;
+            display: flex;
+            flex-direction: column;
+            margin-top: 11px;
+            &__block {
+                gap: 5px;
+                display: flex;
+                align-items: center;
+                &-icon {
+                    width: 24px;
+                    height: 24px;
+                }
+                &-text {
+                    color: $main-black;
+                    font-size: 15px;
+                    font-weight: 500;
+                    line-height: 24px;
+                    & span {
+                        color: $sub-black;
+                    }
+                }
+            }
+            &__list {
+                gap: 25px 120px;
+                display: flex;
+                flex-wrap: wrap;
+                &__item {
+                    width: 253px;
+                }
+            }
+        }
+    }
+    &__fourth-block {
+
+    }
+    &__sixth-block {
+        padding: 70px 0;
+        color: $main-black;
+        border-top: 1px solid #DFDFDF;
+        border-bottom: 1px solid #DFDFDF;
+        &__title {
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 34px;
+            margin-bottom: 15px;
+            & span {
+                color: $main-blue;
+            }
+        }
+        &__subtitle {
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 30px;
+            & span {
+                font-weight: 700;
+            }
+        }
+    }
+    &__seventh-block {
+        margin: 70px auto;
+    }
+    &__eight-block {
+        margin-bottom: 90px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .dealers-single {
+        &__img {
+            width: 100%;
+            height: 280px;
+        }
+        &__map {
+            width: 100%;
+            height: 300px;
+        }
+        &__first-block {
+            gap: 0;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 30px;
+        }
+        &__second-block {
+            flex-direction: column;
+            height: auto;
+            margin-bottom: 30px;
+        }
+        &__fifth-block.wrapper {
+            width: 100%;
+            margin: 0;
+        }
+        &__sixth-block {
+            border-bottom: 0;
+            padding: 40px 0 32px;
+            &__title {
+                font-size: 26px;
+                line-height: 36px;
+            }
+            &__subtitle {
+                font-size: 14px;
+                line-height: 22px;
+                margin-bottom: 8px;
+            }
+        }
+        &__seventh-block, &__eight-block {
+            display: none;
+        }
+    }
+}

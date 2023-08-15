@@ -1,0 +1,43 @@
+@import "../../../common/colors/colors.scss";
+@import "../../../common/constants/constants.scss";
+@import "../../../common/main-components/dealer/dealer.scss";
+@import "../../../common/main-components/seo-block/seo-block.scss";
+@import "../../../common/main-components/model/model.scss";
+
+.dealers {
+    &__map {
+        width: 100%;
+        height: 600px;
+        border-radius: 8px;
+    }
+    &__first-block {
+        gap: 40px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 70px;
+    }
+    &__second-block {
+        margin-bottom: 90px;
+    }
+    &__third-block {
+        margin-bottom: 90px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .dealers {
+        &__map {
+            height: 400px;
+        }
+        &__first-block {
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        &__second-block {
+            margin-bottom: 40px;
+        }
+        &__third-block {
+            display: none;
+        }
+    }
+}

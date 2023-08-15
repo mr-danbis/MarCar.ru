@@ -1,0 +1,28 @@
+@import "../../../common/constants/constants.scss";
+@import "../../../common/main-components/promotion/promotion.scss";
+@import "../../../common/main-components/pagination/pagination.scss";
+@import "../../../common/main-components/new-product/new-product.scss";
+@import "../../../common/main-components/cards-constants/cards-constants.scss";
+
+.news {
+    &__first-block {
+        gap: 30px;
+        display: flex;
+        padding-bottom: 40px;
+        flex-direction: column;
+    }
+    &__second-block, &__third-block {
+        border: 0;
+    }
+    &__second-block {
+        margin-bottom: 90px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .news {
+        &__second-block {
+            margin-bottom: 40px;
+        }
+    }
+}

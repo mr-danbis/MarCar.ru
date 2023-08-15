@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["number-list.scss","../../colors/colors.scss"],"names":[],"mappings":"AAEA;EACI;EACA;EACA;EACA;;AAEA;EACI,OCDK;EDEL;EACA;EACA;EACA;;AAEA;EACI,OCTA;EDUA;EACA;EACA;;;AAKZ;EACI;IACI","file":"number-list.css"}
+{"version":3,"sourceRoot":"","sources":["number-list.scss","../../colors/colors.scss"],"names":[],"mappings":"AAEA;EACI;EACA;EACA;EACA;;AAEA;EACI;EACA;EACA;EACA;EACA;;AAEA;EACI,OCRA;EDSA;EACA;EACA;;;AAKZ;EACI;IACI","file":"number-list.css"}

@@ -1,0 +1,820 @@
+@font-face {
+  font-family: "Inter";
+  src: url(../../../fonts/static/Inter-Thin.ttf);
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url(../../../fonts/static/Inter-ExtraLight.ttf);
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url(../../../fonts/static/Inter-Light.ttf);
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url(../../../fonts/static/Inter-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url(../../../fonts/static/Inter-Medium.ttf);
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url(../../../fonts/static/Inter-SemiBold.ttf);
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url(../../../fonts/static/Inter-Bold.ttf);
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url(../../../fonts/static/Inter-ExtraBlack.ttf);
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url(../../../fonts/static/Inter-Black.ttf);
+  font-weight: 900;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+button {
+  border: 0;
+  cursor: pointer;
+}
+
+input {
+  padding: 0;
+  border: 0;
+}
+
+.wrapper {
+  width: 87%;
+  margin: 0 auto;
+}
+.wrapper__container {
+  display: flex;
+  justify-content: space-between;
+}
+.wrapper__left {
+  width: 67%;
+}
+.wrapper__right {
+  width: 30%;
+}
+
+.block-title {
+  gap: 30px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.block-title__text-white, .block-title__text-black {
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 55px;
+}
+.block-title__text-white {
+  color: #ffffff;
+}
+.block-title__text-black {
+  color: #232323;
+}
+.block-title__link-light, .block-title__link-dark, .block-title__link-more {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 14px;
+  text-align: center;
+  background-color: #FBE200;
+  transition: color 0.5s ease, background-color 0.5s ease;
+}
+.block-title__link-light, .block-title__link-dark {
+  width: 138px;
+  padding: 14px 0;
+  color: #232323;
+}
+.block-title__link-more {
+  width: 100%;
+  display: none;
+  padding: 20px 0;
+  margin-top: 20px;
+}
+.block-title__link-more:hover, .block-title__link-dark:hover {
+  color: #ffffff;
+  background-color: #248FEC;
+}
+.block-title__link-light {
+  transition: background-color 0.5s ease, box-shadow 0.5s ease;
+}
+.block-title__link-light:hover {
+  background-color: #FFF27E;
+  box-shadow: 0px 4px 45px 0px rgba(78, 78, 78, 0.45);
+}
+
+.big-title {
+  color: #232323;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 60px;
+}
+.big-title span {
+  color: #248FEC;
+}
+
+.subtitle {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #232323;
+}
+
+.block-contact {
+  gap: 8px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  transition: color 0.5s ease;
+}
+.block-contact:hover {
+  color: #248FEC;
+}
+.block-contact__icon {
+  width: 18px;
+  height: 18px;
+}
+.block-contact__icon-big {
+  width: 20px;
+  height: 20px;
+}
+.block-contact__text-default {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 18px;
+  color: #575757;
+}
+.block-contact__text-dark, .block-contact__text-light {
+  font-size: 15px;
+  font-weight: 600;
+  color: #232323;
+}
+.block-contact__text-light {
+  color: #ffffff;
+}
+
+.list-social {
+  gap: 5px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+}
+.list-social__item {
+  width: 30px;
+  height: 30px;
+}
+.list-social__item-img {
+  width: 100%;
+  height: auto;
+}
+
+.btn-collapse,
+.btn-read-more {
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  background: transparent;
+}
+.btn-collapse span,
+.btn-read-more span {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 11px;
+  margin-right: 5px;
+  color: var(--deep-blue, #1E4D79);
+}
+
+.btn-read-more-color span {
+  color: var(--main-blue, #248FEC);
+}
+
+.btn-collapse {
+  display: none;
+}
+.btn-collapse__img {
+  transform: rotate(180deg);
+}
+
+@media (min-width: 1100px) and (max-width: 1300px) {
+  .wrapper__left {
+    width: 57%;
+  }
+  .wrapper__right {
+    width: 40%;
+  }
+}
+@media (max-width: 1100px) {
+  .wrapper__container {
+    gap: 40px;
+    flex-direction: column;
+  }
+  .wrapper__left, .wrapper__right {
+    width: 100%;
+  }
+  .big-title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .block-title {
+    margin-bottom: 25px;
+  }
+  .block-title__text-white, .block-title__text-black {
+    font-size: 26px;
+    line-height: 36px;
+  }
+  .block-title__link-dark, .block-title__link-light {
+    display: none;
+  }
+  .block-title__link-more {
+    display: block;
+  }
+}
+.button-yeelow, .button-blue {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 24px;
+  border-radius: 4px;
+}
+.button-yellow {
+  color: #232323;
+  background-color: #FBE200;
+  transition: color 0.5s ease, background-color 0.5s ease;
+}
+.button-yellow:hover {
+  color: #ffffff;
+  background-color: #248FEC;
+}
+.button-blue {
+  color: #ffffff;
+  background-color: #248FEC;
+  transition: color 0.5s ease, background-color 0.5s ease;
+}
+.button-blue:hover {
+  color: #232323;
+  background-color: #FBE200;
+}
+
+.model-nav {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  margin-bottom: 27px;
+}
+.model-nav::-webkit-scrollbar {
+  display: none;
+}
+.model-nav__item {
+  flex-shrink: 0;
+  cursor: pointer;
+  font-size: 15px;
+  margin-right: 8px;
+  padding: 14px 30px;
+  border-radius: 4px;
+  background: #FAFAFA;
+  color: var(--sub-black-text, #575757);
+}
+.model-nav__item--active {
+  background: var(--main-blue, #248FEC);
+  color: #FFF;
+}
+.model-card {
+  gap: 10px;
+  display: flex;
+  border-radius: 4px;
+  background: #FBFBFB;
+}
+.model-card-info {
+  margin: 17px 15px 17px 20px;
+}
+.model-card-info__title {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  color: #232323;
+  margin-bottom: 4px;
+}
+.model-card-info__subtitle {
+  font-size: 11px;
+  line-height: 12px;
+  color: #232323;
+}
+.model-card:hover {
+  cursor: pointer;
+  background: #ffffff;
+  box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.06);
+}
+.model-card:hover .model-card-info__title {
+  color: #248FEC;
+}
+.model-card:hover .model-card-info__subtitle {
+  color: #575757;
+}
+.model-list {
+  gap: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.model-list__item {
+  width: 15%;
+}
+.model-see-more {
+  width: 240px;
+  display: block;
+  margin: 50px auto 0;
+  text-align: center;
+  padding: 20px 0;
+  font-weight: 600;
+  line-height: 15px;
+}
+
+@media (max-width: 1300px) {
+  .model-list {
+    gap: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .model-list__item {
+    width: 20%;
+  }
+}
+.dealer-title {
+  color: #000000;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 55px;
+  margin-bottom: 34px;
+}
+.dealer-list {
+  gap: 50px;
+  display: flex;
+}
+.dealer-list__item {
+  width: 525px;
+}
+.dealer-card {
+  width: 100%;
+  border-radius: 8px;
+  background: #ffffff;
+  border: 1px solid #F4F4F4;
+  box-shadow: 0px 14px 90px 0px rgba(0, 0, 0, 0.06);
+}
+.dealer-card__img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 8px 8px 0px 0px;
+}
+.dealer-card__content {
+  margin: 0 30px 50px;
+}
+.dealer-card__content__city {
+  color: #248FEC;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 18px;
+  margin-bottom: 2px;
+}
+.dealer-card__content__title {
+  color: #232323;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+}
+.dealer-card__content__subtitle {
+  color: #575757;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.dealer-card__content__info {
+  gap: 30px;
+  display: flex;
+  margin: 15px 0;
+}
+.dealer-card__content__info-text {
+  color: #575757;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+}
+.dealer-card__content__info-text span {
+  color: #232323;
+  margin-left: 5px;
+}
+.dealer-card__content__phone {
+  gap: 8px;
+  display: flex;
+  align-items: center;
+}
+.dealer-card__content__phone-icon {
+  width: 24px;
+  height: 24px;
+}
+.dealer-card__content__phone-link {
+  color: #232323;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: normal;
+}
+.dealer-card__content__btn {
+  width: 331px;
+  display: block;
+  margin: 41px auto 0;
+  padding: 18px 0;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  border-radius: 8px;
+  background-color: #248FEC;
+  box-shadow: 0px 14px 24px 0px rgba(36, 143, 236, 0.18);
+  transition: color 0.5s ease, background-color 0.5s ease;
+}
+.dealer-card__content__btn:hover {
+  color: #232323;
+  background-color: #FBE200;
+}
+
+@media (max-width: 1100px) {
+  .dealer-title {
+    font-size: 26px;
+    line-height: 36px;
+    margin-bottom: 20px;
+  }
+  .dealer-list {
+    gap: 50px;
+    display: flex;
+  }
+  .dealer-list__item {
+    width: 100%;
+  }
+  .dealer-card__content {
+    margin: 0 20px 26px;
+  }
+  .dealer-card__content__info {
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0 20px;
+  }
+  .dealer-card__content__btn {
+    width: 100%;
+    margin: 26px auto 0;
+    padding: 30px 0;
+    font-size: 15px;
+    line-height: 15px;
+    border-radius: 8px;
+  }
+}
+.services-default-list {
+  gap: 50px 5%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.services-default-list__item {
+  width: 20%;
+}
+.services-sub-list {
+  display: flex;
+}
+.services-sub-list__item {
+  width: 25%;
+  padding: 30px 53px;
+  border-right: 1px solid #DFDFDF;
+}
+.services-sub-list__item:first-child {
+  padding-left: 0;
+}
+.services-sub-list__item:last-child {
+  padding-right: 0;
+  border-right: 0;
+}
+.services-card {
+  gap: 15px;
+  display: flex;
+  align-items: center;
+}
+.services-card__icon {
+  width: 45px;
+  height: 45px;
+}
+.services-card__title {
+  color: #232323;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 30px;
+}
+.services-card__subtitle {
+  color: #707070;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+@media (max-width: 1100px) {
+  .services-default-list {
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  .services-default-list__item {
+    width: 100%;
+  }
+  .services-sub-list {
+    flex-direction: column;
+  }
+  .services-sub-list__item {
+    width: 100%;
+    padding: 20px 15px;
+    border-right: 0;
+    border-bottom: 1px solid #DFDFDF;
+  }
+  .services-sub-list__item:first-child {
+    padding-left: 20px;
+  }
+  .services-sub-list__item:last-child {
+    padding-right: 20px;
+  }
+  .services-sub-list__item:last-child:last-child {
+    border: 0;
+  }
+  .services-card__icon {
+    width: 34px;
+    height: 34px;
+  }
+  .services-card__title {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+.seo-block {
+  padding: 70px 0;
+  background: #FBFBFB;
+}
+.seo-block__container {
+  max-width: 72%;
+}
+.seo-block__title {
+  color: #1E4D79;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 34px;
+  margin-bottom: 10px;
+}
+.seo-block__subtitle {
+  color: #232323;
+  max-height: 205px;
+  overflow: hidden;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 26px;
+  transition: max-height 0.5s ease;
+}
+
+@media (max-width: 1100px) {
+  .seo-block {
+    padding: 40px 0;
+  }
+  .seo-block__container {
+    max-width: 100%;
+  }
+  .seo-block__title {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .seo-block__subtitle {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+.slider-gallery {
+  display: flex;
+  overflow: hidden;
+}
+.slider-gallery__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.slider-gallery__header__title {
+  color: #000000;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 55px;
+}
+.slider-gallery__container {
+  position: relative;
+  overflow: hidden;
+}
+.slider-gallery__list {
+  display: flex;
+  transition: all 0.3s ease;
+}
+.slider-gallery__list-item {
+  width: 25%;
+  margin-right: 47px;
+}
+.slider-gallery__controls {
+  gap: 5px;
+  display: flex;
+  justify-content: center;
+}
+.slider-gallery__controls__prev-btn, .slider-gallery__controls__next-btn {
+  width: 50px;
+  height: 50px;
+  background: transparent;
+}
+.slider-gallery__controls__prev-btn {
+  transform: rotate(180deg);
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.dealers-single__img {
+  width: 59%;
+  height: 100%;
+  object-fit: cover;
+}
+.dealers-single__map {
+  width: 41%;
+  height: auto;
+}
+.dealers-single__first-block {
+  gap: 5px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+.dealers-single__second-block {
+  display: flex;
+  height: 605px;
+  margin-bottom: 50px;
+}
+.dealers-single__third-block {
+  gap: 112px;
+  display: flex;
+  margin: 50px auto;
+}
+.dealers-single__third-block-title {
+  color: #000000;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 45px;
+  white-space: nowrap;
+}
+.dealers-single__third-block-info {
+  gap: 25px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 11px;
+}
+.dealers-single__third-block-info__block {
+  gap: 5px;
+  display: flex;
+  align-items: center;
+}
+.dealers-single__third-block-info__block-icon {
+  width: 24px;
+  height: 24px;
+}
+.dealers-single__third-block-info__block-text {
+  color: #232323;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 24px;
+}
+.dealers-single__third-block-info__block-text span {
+  color: #575757;
+}
+.dealers-single__third-block-info__list {
+  gap: 25px 120px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.dealers-single__third-block-info__list__item {
+  width: 253px;
+}
+.dealers-single__sixth-block {
+  padding: 70px 0;
+  color: #232323;
+  border-top: 1px solid #DFDFDF;
+  border-bottom: 1px solid #DFDFDF;
+}
+.dealers-single__sixth-block__title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 34px;
+  margin-bottom: 15px;
+}
+.dealers-single__sixth-block__title span {
+  color: #248FEC;
+}
+.dealers-single__sixth-block__subtitle {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 30px;
+}
+.dealers-single__sixth-block__subtitle span {
+  font-weight: 700;
+}
+.dealers-single__seventh-block {
+  margin: 70px auto;
+}
+.dealers-single__eight-block {
+  margin-bottom: 90px;
+}
+
+@media (max-width: 1100px) {
+  .dealers-single__img {
+    width: 100%;
+    height: 280px;
+  }
+  .dealers-single__map {
+    width: 100%;
+    height: 300px;
+  }
+  .dealers-single__first-block {
+    gap: 0;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+  .dealers-single__second-block {
+    flex-direction: column;
+    height: auto;
+    margin-bottom: 30px;
+  }
+  .dealers-single__fifth-block.wrapper {
+    width: 100%;
+    margin: 0;
+  }
+  .dealers-single__sixth-block {
+    border-bottom: 0;
+    padding: 40px 0 32px;
+  }
+  .dealers-single__sixth-block__title {
+    font-size: 26px;
+    line-height: 36px;
+  }
+  .dealers-single__sixth-block__subtitle {
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 8px;
+  }
+  .dealers-single__seventh-block, .dealers-single__eight-block {
+    display: none;
+  }
+}/*# sourceMappingURL=single.css.map */

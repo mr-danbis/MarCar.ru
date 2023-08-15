@@ -1,3 +1,57 @@
+@font-face {
+  font-family: "Inter";
+  src: url(../../../fonts/static/Inter-Thin.ttf);
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url(../../../fonts/static/Inter-ExtraLight.ttf);
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url(../../../fonts/static/Inter-Light.ttf);
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url(../../../fonts/static/Inter-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url(../../../fonts/static/Inter-Medium.ttf);
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url(../../../fonts/static/Inter-SemiBold.ttf);
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url(../../../fonts/static/Inter-Bold.ttf);
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url(../../../fonts/static/Inter-ExtraBlack.ttf);
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url(../../../fonts/static/Inter-Black.ttf);
+  font-weight: 900;
+  font-style: normal;
+}
 * {
   margin: 0;
   padding: 0;
@@ -111,6 +165,81 @@ input {
   font-weight: 400;
   line-height: 28px;
   color: #232323;
+}
+
+.block-contact {
+  gap: 8px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  transition: color 0.5s ease;
+}
+.block-contact:hover {
+  color: #248FEC;
+}
+.block-contact__icon {
+  width: 18px;
+  height: 18px;
+}
+.block-contact__icon-big {
+  width: 20px;
+  height: 20px;
+}
+.block-contact__text-default {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 18px;
+  color: #575757;
+}
+.block-contact__text-dark, .block-contact__text-light {
+  font-size: 15px;
+  font-weight: 600;
+  color: #232323;
+}
+.block-contact__text-light {
+  color: #ffffff;
+}
+
+.list-social {
+  gap: 5px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+}
+.list-social__item {
+  width: 30px;
+  height: 30px;
+}
+.list-social__item-img {
+  width: 100%;
+  height: auto;
+}
+
+.btn-collapse,
+.btn-read-more {
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  background: transparent;
+}
+.btn-collapse span,
+.btn-read-more span {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 11px;
+  margin-right: 5px;
+  color: var(--deep-blue, #1E4D79);
+}
+
+.btn-read-more-color span {
+  color: var(--main-blue, #248FEC);
+}
+
+.btn-collapse {
+  display: none;
+}
+.btn-collapse__img {
+  transform: rotate(180deg);
 }
 
 @media (min-width: 1100px) and (max-width: 1300px) {

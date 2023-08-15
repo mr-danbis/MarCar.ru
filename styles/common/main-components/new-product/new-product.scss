@@ -1,0 +1,18 @@
+@import "../../colors/colors.scss";
+@import "../../main-components/cards-constants/cards-constants.scss";
+
+.new-product {
+    padding: 70px 0;
+    background: linear-gradient(180deg, $main-blue 65%, transparent 35%);
+    &-card {
+        position: relative;
+        &__img {
+            height: 290px;
+        }
+        &__bottom {
+            left: 20px;
+            bottom: 20px;
+            position: absolute;
+        }
+    }
+}

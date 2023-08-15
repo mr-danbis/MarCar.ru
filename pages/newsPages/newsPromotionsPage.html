@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="shortcut icon" href="/images/logoBlue.svg">
-    <link rel="stylesheet" href="/styles/news/promotions/style.css">
+    <link rel="stylesheet" href="/styles/pages/news/promotions/promotions.css">
     
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
@@ -13,11 +13,11 @@
 </head>
 
 <body>
-    <div id="header"></div>
+    <!-- <div id="header"></div> -->
     
     <main>
-        <section class="news-promotions__first-block">
-            <h1 class="big-title wrapper">Акции и спецпредложения</h1>
+        <section class="news-promotions__first-block wrapper">
+            <h1 class="big-title">Акции и спецпредложения</h1>
             <ul class="pagination-list main-cards__list" data-limit="12">
                 <li class="pagination-list__item main-cards__list__item">
                     <a href="/pages/newsPages/newsPromotionPage.html">
@@ -1688,8 +1688,9 @@
         </section>
 
         <section class="new-product news-promotions__second-block">
-                <div class="block-title wrapper">
-                    <h1 class="block-title__text-light">Наши новинки</h1>
+            <div class="wrapper">
+                <div class="block-title">
+                    <h1 class="block-title__text-white">Наши новинки</h1>
                     <a class="block-title__link-light" href="/pages/newsPages/newsNewProductsPage.html">Подробнее</a>
                 </div>
                 <ul class="main-cards__list">
@@ -1735,10 +1736,14 @@
                         </a>
                     </li>
                 </ul>
+                <a href="/pages/newsPages/newsNewProductsPage.html" class="block-title__link-more">
+                    Показать больше
+                </a>
+            </div>
         </section>
     </main>
 
-    <div id="footer"></div>
+    <!-- <div id="footer"></div> -->
 
     <script src="/scripts/main.js"></script>
     <script src="/scripts/pagination.js"></script>

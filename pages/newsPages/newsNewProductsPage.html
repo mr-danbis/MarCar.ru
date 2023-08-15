@@ -5,18 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="shortcut icon" href="/images/logoBlue.svg">
-    <link rel="stylesheet" href="/styles/news/new-products/style.css">
+    <link rel="stylesheet" href="/styles/pages/news/new-products/new-products.css">
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <title>MARCAR</title>
 </head>
 <body>
-    <div id="header"></div>
+    <!-- <div id="header"></div> -->
 
-    <main>
+    <main class="wrapper">
         <section class="news-new-products__first-block">
-            <h1 class="big-title wrapper">Наши новинки</h1>
+            <h1 class="big-title">Наши новинки</h1>
             <ul class="pagination-list main-cards__list" data-limit="12">
                 <li class="pagination-list__item main-cards__list__item">
                     <a href="/pages/newsPages/newsNewProductPage.html">
@@ -1171,13 +1171,13 @@
         </section>
     
         <section class="news-new-products__second-block">
-            <div class="block-title wrapper">
-                <h1 class="block-title__text-dark">Акции и спецпредложения</h1>
+            <div class="block-title">
+                <h1 class="block-title__text-black">Акции и спецпредложения</h1>
                 <a href="/pages/newsPages/newsPromotionsPage.html" class="block-title__link-dark">Подробнее</a>
             </div>
             <ul class="main-cards__list">
                 <li class="main-cards__list__item">
-                    <a href="/pages/newsPages/newsNewProductPage.html">
+                    <a href="/pages/newsPages/newsPromotionPage.html">
                         <div class="promotion-card">
                             <div class="promotion-card__top">
                                 <ul class="promotion-card__list">
@@ -1203,7 +1203,7 @@
                     </a>
                 </li>
                 <li class="main-cards__list__item">
-                    <a href="/pages/newsPages/newsNewProductPage.html">
+                    <a href="/pages/newsPages/newsPromotionPage.html">
                         <div class="promotion-card">
                             <div class="promotion-card__top">
                                 <ul class="promotion-card__list">
@@ -1222,7 +1222,7 @@
                     </a>
                 </li>
                 <li class="main-cards__list__item">
-                    <a href="/pages/newsPages/newsNewProductPage.html">
+                    <a href="/pages/newsPages/newsPromotionPage.html">
                         <div class="promotion-card">
                             <div class="promotion-card__top">
                                 <ul class="promotion-card__list">
@@ -1241,10 +1241,13 @@
                     </a>
                 </li>
             </ul>
-        </section>  
+            <a href="/pages/newsPages/newsNewProductsPage.html" class="block-title__link-more">
+                Показать больше
+            </a>
+        </section>
     </main>
     
-    <div id="footer"></div>
+    <!-- <div id="footer"></div> -->
 
     <script src="/scripts/main.js"></script>
     <script src="/scripts/pagination.js"></script>

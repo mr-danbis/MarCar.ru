@@ -1,26 +1,67 @@
 @import "../../colors/colors.scss";
+@import "../../../common/main-components/button/button.scss";
 
 .model {
-    &-card {
-        gap: 6px;
+    &-nav {
         display: flex;
-        align-items: center;
-        &__icon {
-            width: 35px;
-            height: 29px;
+        overflow-x: auto;
+        white-space: nowrap;
+        margin-bottom: 27px;
+
+        &::-webkit-scrollbar {
+            display: none;
         }
-        &__title {
-            color: $main-black;
-            font-size: 13px;
-            font-weight: 500;
-            line-height: 18px;
-            margin-bottom: 2px;
+
+        &__item {
+            flex-shrink: 0;
+            cursor: pointer;
+            font-size: 15px;
+            margin-right: 8px;
+            padding: 14px 30px;
+            border-radius: 4px;
+            background: #FAFAFA;
+            color: var(--sub-black-text, #575757);
+
+            &--active {
+                background: var(--main-blue, #248FEC);
+                color: #FFF;
+            }
         }
-        &__subtitle {
-            color: $sub-black;
-            font-size: 10px;
-            font-weight: 400;
-            line-height: 10px;
+    }
+    &-card {
+        gap: 10px;
+        display: flex;
+        border-radius: 4px;
+        background: $gray;
+        &-info {
+            margin: 17px 15px 17px 20px;
+            &__title {
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 18px;
+                color: $main-black;
+                margin-bottom: 4px;
+            }
+
+            &__subtitle {
+                font-size: 11px;
+                line-height: 12px;
+                color: $main-black;
+            }
+        }
+
+        &:hover {
+            cursor: pointer;
+            background: $white;
+            box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.06);
+
+            & .model-card-info__title {
+                color: $main-blue;
+            }
+
+            & .model-card-info__subtitle {
+                color: $sub-black;
+            }
         }
     }
     &-list {
@@ -29,23 +70,29 @@
         flex-wrap: wrap;
         justify-content: space-between;
         &__item {
-            padding: 10px 14px;
-            width: 25%;
-            border-radius: 2px;
-            background: $white;
+            width: 15%;
         }
+    }
+    &-see-more {
+        width: 240px;
+        display: block;
+        margin: 50px auto 0;
+        text-align: center;
+        padding: 20px 0;
+        font-weight: 600;
+        line-height: 15px;
     }
 }
 
-@media (max-width: 1094px) { 
+@media (max-width: 1300px) {
     .model {
         &-list {
-            gap: 9px 0;
+            gap: 20px 0;
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
             &__item {
-                width: 40%;
+                width: 20%;
             }
         }
     }

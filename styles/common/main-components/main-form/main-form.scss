@@ -1,0 +1,66 @@
+.filter-form {
+    &__container {
+        gap: 0;
+        display: flex;
+        flex-wrap: wrap;
+        &__input {
+            box-sizing: border-box;
+            border: 0;
+            width: 167px;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 16px;
+            padding: 17px 20px;
+            color: #969696;
+            background: #FFF;
+            border-right: 1px solid #DFDFDF;
+            border-bottom: 1px solid #DFDFDF;
+        }
+        &__select {
+            width: 415px;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 16px;
+            padding: 17px 20px;
+            color: #969696;
+            background: #FFF;
+            border: 1px solid #DFDFDF;
+        }
+    }
+    &__buttons {
+        display: flex;
+        align-items: center;
+        margin: 25px 0 50px;
+        &-settings {
+            width: 262px;
+            display: flex;
+            justify-content: space-between;
+            margin-right: 448px;
+            &__button {
+                display: flex;
+                align-items: center;
+                background: transparent;
+                &-img {
+                    width: 24px;
+                    height: 24px;
+                    margin-right: 5px;
+                }
+                &-text {
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    color: var(--black, #232323);
+                }
+            }
+        }
+        &-btn-show {
+            padding: 18px 34px;
+            color: var(--black, #232323);
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 14px;
+            border-radius: 4px;
+            background: var(--yellow, #FBE200);
+        }
+    }
+}

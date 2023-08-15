@@ -1,9 +1,8 @@
 @import "../../colors/colors.scss";
 @import "../cards-constants/cards-constants.scss";
 
-.promotion {
-    &-card {
-        position: relative;
+.promotion-card {
+    position: relative;
     &__img {
         height: 370px;
     }
@@ -36,6 +35,5 @@
         left: 20px;
         bottom: 25px;
         position: absolute;
-    }
     }
 }
